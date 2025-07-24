@@ -23,9 +23,13 @@ Before creating a new issue, please:
 
 ## 🚀 Response Times
 
-- **Critical bugs**: Within 24-48 hours
-- **General issues**: Within 3-5 business days
-- **Feature requests**: Reviewed monthly for roadmap planning
+I'm a solo developer with a full-time job, but I care deeply about this project and will get to your issues as soon as I can!
+
+- **Critical bugs**: I'll try to look at these quickly
+- **General issues**: Usually within a week
+- **Feature requests**: I review these regularly and add them to my backlog
+
+Your patience and understanding are greatly appreciated! 💚
 
 ## 📞 Support Channels
 

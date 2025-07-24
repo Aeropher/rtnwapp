@@ -238,8 +238,15 @@ main {
     margin-bottom: 1.5rem;
 }
 
+.response-times p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
 .response-times ul {
     list-style: none;
+    margin-bottom: 1.5rem;
 }
 
 .response-times li {
