@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🛡️ Security Vulnerability
+    url: mailto:security@rtnw.app
+    about: Please report security vulnerabilities privately
+  - name: 💬 Discussions
+    url: https://github.com/yourusername/rtnwapp/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📖 Try RightNow
+    url: https://rtnw.app
+    about: Try the web app or get help and documentation
