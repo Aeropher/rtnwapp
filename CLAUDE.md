@@ -44,7 +44,7 @@ Since this is an issue-only repository with a GitHub Pages site, common tasks in
 
 ## Important Notes
 
-- Security issues should be reported to security@rtnw.app, not as public issues
+- Security issues should be reported using GitHub's private vulnerability reporting, not as public issues
 - The repository uses GitHub issue templates that automatically appear when users create new issues
 - Response time expectations are documented in the README
 - GitHub Pages site will be available at https://[username].github.io/rtnwapp/ once enabled

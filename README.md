@@ -30,7 +30,7 @@ Before creating a new issue, please:
 ## 📞 Support Channels
 
 - **Bug reports & feature requests**: Use this repository
-- **Security issues**: Email <security@rtnw.app> (or use private reporting)
+- **Security issues**: Use GitHub's private vulnerability reporting
 - **General questions**: GitHub Discussions or try the app at [rtnw.app](https://rtnw.app)
 - **Documentation**: Check our [web app](https://rtnw.app) for guides and help
 
@@ -42,10 +42,7 @@ Before creating a new issue, please:
 
 ## 🔒 Privacy & Security
 
-If you discover a security vulnerability, please **do not** open a public issue. Instead:
-
-- Use GitHub's private vulnerability reporting feature
-- Or email us directly at <security@rtnw.app>
+If you discover a security vulnerability, please **do not** open a public issue. Instead, use GitHub's private vulnerability reporting feature.
 
 ## 📊 Project Status
 

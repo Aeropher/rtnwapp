@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
+    --primary-color: #16a34a;
+    --primary-hover: #15803d;
     --secondary-color: #64748b;
     --secondary-hover: #475569;
     --success-color: #22c55e;
     --warning-color: #f59e0b;
     --planned-color: #94a3b8;
     --background: #ffffff;
-    --surface: #f8fafc;
-    --border: #e2e8f0;
+    --surface: #f0fdf4;
+    --border: #bbf7d0;
     --text-primary: #1e293b;
     --text-secondary: #64748b;
     --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -39,6 +39,20 @@ header {
     background-color: var(--surface);
     border-bottom: 1px solid var(--border);
     padding: 2rem 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow);
 }
 
 header h1 {
@@ -257,14 +271,14 @@ main {
 
 /* Security Notice */
 .security-notice {
-    background: #fef3c7;
-    border: 1px solid #fbbf24;
+    background: #f0fdf4;
+    border: 1px solid #86efac;
     border-radius: 0.75rem;
     padding: 2rem;
 }
 
 .security-notice h3 {
-    color: #92400e;
+    color: #14532d;
     margin-bottom: 1rem;
 }
 
@@ -315,6 +329,16 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
     header h1 {
         font-size: 2rem;
     }
