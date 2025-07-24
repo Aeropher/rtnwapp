@@ -1,7 +1,7 @@
 # GitHub Pages Configuration
 title: RightNow Issues & Feedback
 description: Official issue tracker and feedback hub for RightNow - the capacity-first productivity app
-url: https://yourusername.github.io
+url: https://aeropher.github.io
 baseurl: /rtnwapp
 
 # Build settings

@@ -4,7 +4,7 @@ contact_links:
     url: mailto:security@rtnw.app
     about: Please report security vulnerabilities privately
   - name: 💬 Discussions
-    url: https://github.com/yourusername/rtnwapp/discussions
+    url: https://github.com/aeropher/rtnwapp/discussions
     about: Ask questions and discuss ideas with the community
   - name: 📖 Try RightNow
     url: https://rtnw.app
