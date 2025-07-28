@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RightNow Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fdf8;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f1 100%);
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2e7d32;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #558b2f;
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        nav {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        nav h2 {
+            color: #2e7d32;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #558b2f;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            transform: translateX(5px);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .main-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 50px;
+            scroll-margin-top: 100px;
+        }
+
+        h2 {
+            color: #2e7d32;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8f5e9;
+        }
+
+        h3 {
+            color: #388e3c;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #43a047;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .feature-card {
+            background: #f5faf5;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .code-block {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+
+        .tip {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .tip strong {
+            color: #2e7d32;
+        }
+
+        .warning {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+
+        .warning strong {
+            color: #e65100;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #4caf50;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .back-to-top:hover {
+            background: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                position: static;
+                margin-bottom: 20px;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo1.png" alt="RightNow Logo" class="logo">
+        <h1>RightNow Documentation</h1>
+        <p class="tagline">Your guide to capacity-first productivity</p>
+    </header>
+
+    <div class="content">
+        <nav>
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#core-concepts">Core Concepts</a></li>
+                <li><a href="#daily-workflow">Daily Workflow</a></li>
+                <li><a href="#task-management">Task Management</a></li>
+                <li><a href="#capacity-planning">Capacity Planning</a></li>
+                <li><a href="#tips-tricks">Tips & Tricks</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section id="getting-started">
+                <h2>Getting Started</h2>
+                <p>Welcome to RightNow! This guide will help you get up and running with the capacity-first productivity system that actually works with your life, not against it.</p>
+                
+                <h3>First Steps</h3>
+                <ol>
+                    <li>Visit <a href="https://rtnw.app" style="color: #4caf50;">rtnw.app</a> to access the web app</li>
+                    <li>Create your account (or use the app without an account for testing)</li>
+                    <li>Set up your first daily capacity</li>
+                    <li>Add your first tasks to the backlog</li>
+                    <li>Plan your day based on available time</li>
+                </ol>
+
+                <div class="tip">
+                    <strong>💡 Pro tip:</strong> Start with a realistic capacity estimate. It's better to under-promise and over-deliver to yourself!
+                </div>
+            </section>
+
+            <section id="core-concepts">
+                <h2>Core Concepts</h2>
+                <p>RightNow is built on proven productivity principles from GTD, Scrum, Deep Work, and Bullet Journaling. Here are the key concepts you need to understand:</p>
+
+                <div class="feature-card">
+                    <h3>Capacity-First Planning</h3>
+                    <p>Unlike traditional todo apps that let you pile on endless tasks, RightNow starts with your available time and energy. You decide how much capacity you have for the day, then plan accordingly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>The Backlog</h3>
+                    <p>Your backlog is where all tasks live until you're ready to work on them. Think of it as your task inventory - everything captured in one place, ready to be planned when the time is right.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Daily Sprints</h3>
+                    <p>Each day is like a mini sprint. You pull tasks from your backlog based on your capacity, creating a realistic plan for what you can actually accomplish.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Task Migration</h3>
+                    <p>Inspired by Bullet Journaling, tasks that don't get done aren't failures - they're consciously migrated to the next day or back to the backlog. This helps you understand what truly matters.</p>
+                </div>
+            </section>
+
+            <section id="daily-workflow">
+                <h2>Daily Workflow</h2>
+                <p>Here's the recommended daily flow for using RightNow effectively:</p>
+
+                <h3>Morning Planning (5-10 minutes)</h3>
+                <ol>
+                    <li><strong>Set your capacity:</strong> How many hours do you realistically have for tasks today?</li>
+                    <li><strong>Review yesterday:</strong> Migrate any unfinished tasks</li>
+                    <li><strong>Plan today:</strong> Pull tasks from your backlog until you hit capacity</li>
+                    <li><strong>Prioritize:</strong> Order tasks by importance and energy levels</li>
+                </ol>
+
+                <h3>Throughout the Day</h3>
+                <ul>
+                    <li>Check off tasks as you complete them</li>
+                    <li>Add new tasks directly to the backlog (not today's list)</li>
+                    <li>Adjust time estimates if you notice patterns</li>
+                </ul>
+
+                <h3>Evening Review (2-3 minutes)</h3>
+                <ul>
+                    <li>Celebrate what you accomplished</li>
+                    <li>Note any tasks to migrate</li>
+                    <li>Quick scan of tomorrow's calendar for capacity planning</li>
+                </ul>
+            </section>
+
+            <section id="task-management">
+                <h2>Task Management</h2>
+                
+                <h3>Creating Effective Tasks</h3>
+                <p>Good task creation is key to accurate capacity planning:</p>
+                <ul>
+                    <li><strong>Be specific:</strong> "Email John about project timeline" not "Email"</li>
+                    <li><strong>Make it actionable:</strong> Start with a verb</li>
+                    <li><strong>Break down big tasks:</strong> If it takes more than 2 hours, split it</li>
+                    <li><strong>Include context:</strong> Add enough detail so future-you understands</li>
+                </ul>
+
+                <h3>Estimating Task Duration</h3>
+                <p>RightNow helps you get better at estimating over time:</p>
+                <ol>
+                    <li>Start with your best guess</li>
+                    <li>Track actual time spent</li>
+                    <li>The app learns your patterns and suggests better estimates</li>
+                    <li>Regular tasks become more predictable</li>
+                </ol>
+
+                <div class="warning">
+                    <strong>⚠️ Common mistake:</strong> Don't forget to include transition time between tasks. If you have back-to-back meetings, account for the mental switch!
+                </div>
+            </section>
+
+            <section id="capacity-planning">
+                <h2>Capacity Planning</h2>
+                
+                <h3>Understanding Your True Capacity</h3>
+                <p>Your capacity isn't just about hours in the day. Consider:</p>
+                <ul>
+                    <li><strong>Energy levels:</strong> When are you most focused?</li>
+                    <li><strong>Fixed commitments:</strong> Meetings, commute, meals</li>
+                    <li><strong>Buffer time:</strong> Always leave 20% for the unexpected</li>
+                    <li><strong>Deep work vs admin:</strong> Different tasks need different mental states</li>
+                </ul>
+
+                <h3>Capacity Patterns</h3>
+                <p>RightNow helps you discover your patterns:</p>
+                <div class="feature-card">
+                    <h4>Monday Blues</h4>
+                    <p>Many people have lower capacity on Mondays. Plan lighter or more engaging tasks.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Friday Wind-Down</h4>
+                    <p>Fridays might have less deep work capacity. Perfect for planning and admin tasks.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Mid-Week Peak</h4>
+                    <p>Tuesday-Thursday often have the highest capacity. Schedule your most important work here.</p>
+                </div>
+            </section>
+
+            <section id="tips-tricks">
+                <h2>Tips & Tricks</h2>
+                
+                <h3>Power User Features</h3>
+                <ul>
+                    <li><strong>Quick add:</strong> Use natural language like "Email John 30min tomorrow"</li>
+                    <li><strong>Recurring tasks:</strong> Set up daily/weekly/monthly patterns</li>
+                    <li><strong>Tags:</strong> Organize by project, context, or energy level</li>
+                    <li><strong>Time blocking:</strong> Drag tasks to specific time slots</li>
+                </ul>
+
+                <h3>Productivity Hacks</h3>
+                <div class="tip">
+                    <strong>🎯 The 2-Minute Rule:</strong> If it takes less than 2 minutes, do it now instead of adding to your list.
+                </div>
+                <div class="tip">
+                    <strong>🔋 Energy matching:</strong> Tag tasks by energy required and match them to your daily rhythms.
+                </div>
+                <div class="tip">
+                    <strong>📦 Batch similar tasks:</strong> Group all emails, all calls, all creative work together.
+                </div>
+            </section>
+
+            <section id="troubleshooting">
+                <h2>Troubleshooting</h2>
+                
+                <h3>Common Issues</h3>
+                
+                <h4>Always over capacity</h4>
+                <p>If you're consistently planning more than you can do:</p>
+                <ul>
+                    <li>Reduce your daily capacity estimate by 20%</li>
+                    <li>Break tasks into smaller chunks</li>
+                    <li>Add buffer time between tasks</li>
+                    <li>Review if your estimates are too optimistic</li>
+                </ul>
+
+                <h4>Backlog growing too large</h4>
+                <p>A growing backlog might mean:</p>
+                <ul>
+                    <li>You're capturing too much (good problem!)</li>
+                    <li>Time for a backlog grooming session</li>
+                    <li>Some tasks might not be important anymore</li>
+                    <li>Consider delegating or deleting old items</li>
+                </ul>
+
+                <h4>Forgetting to plan</h4>
+                <p>Build the habit:</p>
+                <ul>
+                    <li>Set a daily reminder</li>
+                    <li>Link it to existing habits (with morning coffee)</li>
+                    <li>Keep the app tab open</li>
+                    <li>Start with just 5 minutes</li>
+                </ul>
+            </section>
+
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                
+                <h3>General Questions</h3>
+                
+                <h4>Is RightNow free?</h4>
+                <p>Yes! The core features are free to use. We believe everyone deserves good productivity tools.</p>
+
+                <h4>Do I need an account?</h4>
+                <p>No, you can try RightNow without creating an account. However, an account lets you sync across devices and backs up your data.</p>
+
+                <h4>Is there a mobile app?</h4>
+                <p>Android app is in closed testing. iOS app is coming soon. The web app works great on mobile browsers in the meantime!</p>
+
+                <h3>Feature Questions</h3>
+                
+                <h4>Can I share tasks with others?</h4>
+                <p>Not yet, but it's on our roadmap. RightNow is currently designed for personal productivity.</p>
+
+                <h4>Does it integrate with my calendar?</h4>
+                <p>Calendar integration is coming soon! For now, you can manually block out time for meetings when setting capacity.</p>
+
+                <h4>Can I export my data?</h4>
+                <p>Yes! You can export all your tasks and history in CSV format from the settings page.</p>
+
+                <h3>Philosophy Questions</h3>
+                
+                <h4>Why capacity-first?</h4>
+                <p>Traditional todo lists let you add infinite tasks, setting you up for failure. By starting with your real capacity, you make realistic plans that you can actually complete, building momentum and confidence.</p>
+
+                <h4>Isn't this just time blocking?</h4>
+                <p>It's inspired by time blocking but more flexible. You don't have to assign specific times to every task - just ensure your total planned work fits your capacity.</p>
+
+                <div class="tip">
+                    <strong>Still have questions?</strong> Check out the GitHub issues for community discussions, or wait for our upcoming contact form!
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <a href="#" class="back-to-top">↑ Top</a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Active nav highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.backgroundColor = '';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.backgroundColor = '#e8f5e9';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
