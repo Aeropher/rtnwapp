@@ -37,6 +37,7 @@ Your patience and understanding are greatly appreciated! 💚
 - **Security issues**: Use GitHub's private vulnerability reporting
 - **General questions**: GitHub Discussions or try the app at [rtnw.app](https://rtnw.app)
 - **Documentation**: Check our [web app](https://rtnw.app) for guides and help
+- **Feature Overview**: See [FEATURES.md](FEATURES.md) for a comprehensive list of RightNow features
 
 ## 📱 Platform Information
 
