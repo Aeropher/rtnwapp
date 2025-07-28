@@ -398,6 +398,16 @@ a:hover {
 }
 
 /* Blog Styles */
+.rss-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.rss-link:hover {
+    color: var(--primary-dark);
+}
 .blog-container {
     max-width: 700px;
     margin: 0 auto;
