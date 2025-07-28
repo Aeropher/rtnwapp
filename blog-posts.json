@@ -8,7 +8,12 @@
     {
       "id": "post-002",
       "date": "2025-01-28T09:30:00Z",
-      "content": "<p>Hi everyone, I am Alex, a solo developer with a full time job. I have been on the hunt for the perfect todo app to help me to manage my job and my life. Now I know that there is simply no such thing but I am having a go at making something that will work for me and I hope it works for more people as well.</p><p>This project fulfils a few goals for me. I get to make an actual app on the app store(s), I get my own custom todo app that should work for me the way I want it to. I get to learn about technologies that are quite far outside of my usual day job. I get to have fun in my own nerdy way. This whole project is pretty cool for me :-)</p>"
+      "content": "<p>Hi everyone, I am Alex, a solo developer with a full-time job.</p><p>I have been on the hunt for the perfect todo app to help me manage my job and my life. Now I know that there is simply no such thing, but I am having a go at making something that will work for me and I hope it works for more people as well.</p><p>This project fulfills a few goals for me:</p><p>I get to make an actual app on the app store(s). I get my own custom todo app that should work for me the way I want it to. I get to learn about technologies that are quite far outside of my usual day job. I get to have fun in my own nerdy way.</p><p>This whole project is pretty cool for me :-)</p>"
+    },
+    {
+      "id": "post-003",
+      "date": "2025-01-28T11:00:00Z",
+      "content": "<p>AI.</p><p>I am pretty torn about the use and the implications of AI on the world.</p><p>I use AI very liberally in this project, and it's another reason I wanted to do this project. I think it gave me a good way to learn about a technology that I think is going to be revolutionary.</p><p>Like with most technologies, once the cat is out of the bag, it can't be put back in. And I think if I don't get to grips with it, then I will be falling behind not just in my career but in life.</p><p>So I hope you don't mind my use of AI. And if you are interested in hearing more about how and why I use it, then just let me know... Somehow... I'm not sure how you can reach me just yet but I will make it possible lol.</p>"
     }
   ]
 }

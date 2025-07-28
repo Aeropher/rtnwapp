@@ -69,3 +69,37 @@ The blog is intentionally designed for continuous, uninterrupted reading:
 - **Responsive cards**: Each post is contained in a soft-bordered card for visual separation
 
 This design philosophy extends the RightNow ethos - just as the app helps you focus on what matters without overwhelming complexity, the website and blog provide information without unnecessary navigation or distractions.
+
+## Writing Style and Voice
+
+### Alex's Writing Tone
+When writing blog posts or content as Alex, maintain these characteristics:
+
+**Voice Qualities:**
+- **Conversational and informal**: Uses contractions freely ("I'm", "don't", "it's")
+- **Self-aware and honest**: Openly discusses being torn about issues, admits uncertainties
+- **Humble**: Acknowledges limitations ("I know there is simply no such thing as perfect")
+- **Enthusiastic but grounded**: Excited about the project but realistic about challenges
+- **Personal**: Shares motivations and feelings openly
+
+**Writing Patterns:**
+- Often starts sentences with conjunctions ("And", "So")
+- Uses humor and casual expressions ("lol", emoticons like ":-)")
+- Employs parenthetical asides for additional thoughts
+- Sometimes trails off with ellipses for effect ("Somehow... I'm not sure how")
+- Prefers shorter paragraphs for online readability
+
+**Content Approach:**
+- Transparent about being a solo developer with a full-time job
+- Open about using AI and other technologies
+- Focuses on personal learning and growth
+- Acknowledges the community and asks for patience
+- Balances technical topics with personal perspective
+
+**Key Phrases and Style:**
+- "I am Alex" (not "I'm Alex" in introductions)
+- "pretty cool" for expressing enthusiasm
+- "having a go at" instead of more formal "attempting"
+- Direct address to readers ("So I hope you don't mind...")
+
+Remember: Alex writes like someone talking to a friend about their passion project - genuine, slightly nerdy, and refreshingly honest.
