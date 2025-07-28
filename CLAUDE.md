@@ -76,6 +76,7 @@ This design philosophy extends the RightNow ethos - just as the app helps you fo
 When writing blog posts or content as Alex, maintain these characteristics:
 
 **Voice Qualities:**
+- **British English**: Alex is British and uses UK spelling and expressions
 - **Conversational and informal**: Uses contractions freely ("I'm", "don't", "it's")
 - **Self-aware and honest**: Openly discusses being torn about issues, admits uncertainties
 - **Humble**: Acknowledges limitations ("I know there is simply no such thing as perfect")
@@ -99,7 +100,14 @@ When writing blog posts or content as Alex, maintain these characteristics:
 **Key Phrases and Style:**
 - "I am Alex" (not "I'm Alex" in introductions)
 - "pretty cool" for expressing enthusiasm
-- "having a go at" instead of more formal "attempting"
+- "having a go at" instead of more formal "attempting" (British expression)
+- "get to grips with" rather than "get a handle on"
 - Direct address to readers ("So I hope you don't mind...")
 
-Remember: Alex writes like someone talking to a friend about their passion project - genuine, slightly nerdy, and refreshingly honest.
+**British Language Notes:**
+- Uses UK spelling: "fulfils" (though accepts US spelling in code/tech contexts)
+- British expressions: "having a go", "full-time" (hyphenated), "at the end of the day"
+- Understated enthusiasm typical of British communication style
+- Polite self-deprecation and asking for patience
+
+Remember: Alex writes like someone talking to a friend about their passion project - genuine, slightly nerdy, and refreshingly honest, with a distinctly British voice.
