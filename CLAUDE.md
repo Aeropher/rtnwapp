@@ -49,3 +49,23 @@ Since this is an issue-only repository with a GitHub Pages site, common tasks in
 - Response time expectations are documented in the README
 - GitHub Pages site will be available at https://[username].github.io/rtnwapp/ once enabled
 - Remember to update the GitHub username in index.html links and _config.yml
+
+## Design Philosophy
+
+### Website Design
+The website follows a clean, minimalist design approach that reflects RightNow's core philosophy of "doing less to achieve more":
+- **Green color scheme**: Represents growth, productivity, and a fresh approach to task management
+- **Soft, rounded edges**: Creates a friendly, approachable feel that reduces stress
+- **Light background with subtle green accents**: Maintains visual clarity and reduces cognitive load
+- **Clear visual hierarchy**: Important actions are prominent, secondary information is subdued
+
+### Blog Design
+The blog is intentionally designed for continuous, uninterrupted reading:
+- **No individual post pages**: All content is on one page to encourage flow and reduce clicks
+- **Infinite scroll**: Seamlessly load more posts as you read, maintaining engagement
+- **Minimal metadata**: Only timestamps shown, keeping focus on the content
+- **Chronological order**: Latest updates at the top for returning visitors
+- **Simple JSON storage**: Easy to update by adding new entries to blog-posts.json
+- **Responsive cards**: Each post is contained in a soft-bordered card for visual separation
+
+This design philosophy extends the RightNow ethos - just as the app helps you focus on what matters without overwhelming complexity, the website and blog provide information without unnecessary navigation or distractions.

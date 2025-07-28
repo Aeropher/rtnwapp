@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RightNow Blog - Updates & Thoughts</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Updates, thoughts, and news from the RightNow development team">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Logo1.png">
+    <link rel="apple-touch-icon" href="Logo1.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="Logo1.png" alt="RightNow Logo" class="logo">
+                <div>
+                    <h1>RightNow Blog</h1>
+                    <p class="tagline">Updates, thoughts, and news from development</p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html">← Back to Issues</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container blog-container">
+        <div id="posts-container" class="posts-container">
+            <!-- Posts will be dynamically loaded here -->
+        </div>
+        <div id="loading" class="loading-indicator" style="display: none;">
+            <span>Loading more posts...</span>
+        </div>
+        <div id="no-more-posts" class="no-more-posts" style="display: none;">
+            <p>You've reached the beginning of time! 🎉</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RightNow. All issues are triaged and implemented in our private development repository.</p>
+            <div class="footer-links">
+                <a href="https://github.com/aeropher/rtnwapp">GitHub</a>
+                <a href="https://rtnw.app">Try RightNow</a>
+                <a href="index.html">Issues & Feedback</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Configuration
+        const POSTS_PER_PAGE = 10;
+        let currentPage = 0;
+        let isLoading = false;
+        let hasMorePosts = true;
+        let allPosts = [];
+
+        // Load posts from JSON file
+        async function loadPostsData() {
+            try {
+                const response = await fetch('blog-posts.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load posts');
+                }
+                const data = await response.json();
+                allPosts = data.posts || [];
+                // Sort posts by date (newest first)
+                allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                return true;
+            } catch (error) {
+                console.error('Error loading posts:', error);
+                document.getElementById('posts-container').innerHTML = 
+                    '<div class="error-message">Unable to load blog posts. Please try again later.</div>';
+                return false;
+            }
+        }
+
+        // Format date to readable string
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        // Render a single post
+        function renderPost(post) {
+            const postElement = document.createElement('article');
+            postElement.className = 'blog-post';
+            postElement.innerHTML = `
+                <div class="post-meta">
+                    <time datetime="${post.date}">${formatDate(post.date)}</time>
+                </div>
+                <div class="post-content">
+                    ${post.content}
+                </div>
+            `;
+            return postElement;
+        }
+
+        // Load more posts
+        function loadMorePosts() {
+            if (isLoading || !hasMorePosts) return;
+
+            isLoading = true;
+            document.getElementById('loading').style.display = 'block';
+
+            // Simulate loading delay for better UX
+            setTimeout(() => {
+                const startIndex = currentPage * POSTS_PER_PAGE;
+                const endIndex = startIndex + POSTS_PER_PAGE;
+                const postsToShow = allPosts.slice(startIndex, endIndex);
+
+                if (postsToShow.length === 0) {
+                    hasMorePosts = false;
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('no-more-posts').style.display = 'block';
+                    return;
+                }
+
+                const container = document.getElementById('posts-container');
+                postsToShow.forEach(post => {
+                    container.appendChild(renderPost(post));
+                });
+
+                currentPage++;
+                isLoading = false;
+                document.getElementById('loading').style.display = 'none';
+
+                // Check if we've loaded all posts
+                if (endIndex >= allPosts.length) {
+                    hasMorePosts = false;
+                    document.getElementById('no-more-posts').style.display = 'block';
+                }
+            }, 500);
+        }
+
+        // Infinite scroll handler
+        function handleScroll() {
+            const scrollPosition = window.innerHeight + window.scrollY;
+            const threshold = document.body.offsetHeight - 200;
+
+            if (scrollPosition >= threshold) {
+                loadMorePosts();
+            }
+        }
+
+        // Initialize
+        async function init() {
+            const loaded = await loadPostsData();
+            if (loaded) {
+                loadMorePosts(); // Load initial posts
+                window.addEventListener('scroll', handleScroll);
+            }
+        }
+
+        // Start when DOM is ready
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

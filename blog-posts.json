@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": "post-001",
+      "date": "2025-01-28T10:00:00Z",
+      "content": "<p>Hello World</p>"
+    },
+    {
+      "id": "post-002",
+      "date": "2025-01-28T09:30:00Z",
+      "content": "<p>Hi everyone, I am Alex, a solo developer with a full time job. I have been on the hunt for the perfect todo app to help me to manage my job and my life. Now I know that there is simply no such thing but I am having a go at making something that will work for me and I hope it works for more people as well.</p><p>This project fulfils a few goals for me. I get to make an actual app on the app store(s), I get my own custom todo app that should work for me the way I want it to. I get to learn about technologies that are quite far outside of my usual day job. I get to have fun in my own nerdy way. This whole project is pretty cool for me :-)</p>"
+    }
+  ]
+}

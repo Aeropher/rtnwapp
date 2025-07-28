@@ -396,3 +396,128 @@ a:hover {
 .mb-2 {
     margin-bottom: 2rem;
 }
+
+/* Blog Styles */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+}
+
+.posts-container {
+    margin-bottom: 2rem;
+}
+
+.blog-post {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+}
+
+.blog-post:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.post-meta {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-meta time {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.post-content {
+    color: var(--text-primary);
+    line-height: 1.8;
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+}
+
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}
+
+.loading-indicator span {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--surface);
+    border-radius: 2rem;
+    border: 1px solid var(--border);
+}
+
+.no-more-posts {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.error-message {
+    text-align: center;
+    padding: 3rem;
+    color: #dc2626;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 0.75rem;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.header-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Features Section */
+.features-section {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.features-section h2 {
+    margin-bottom: 1rem;
+}
+
+.features-section p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments for blog */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 1.5rem;
+    }
+    
+    .header-nav {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
