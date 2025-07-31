@@ -334,6 +334,15 @@ footer p {
     color: var(--primary-color);
 }
 
+.ko-fi-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.ko-fi-link:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
