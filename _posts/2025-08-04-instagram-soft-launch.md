@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Instagram Soft Launch"
+date: 2025-08-04 12:00:00 +0000
+---
+
+<p>Today I posted on my personal and public Instagram pages that I've been working on RightNow. I included a picture of the logo. It was quite a nerve racking thing actually. My public handle is @AeropherXD if you want to have a look.</p><p>The app is still very much in alpha. There's a lot I want to improve and polish before I'd consider it properly ready. But sometimes you've got to put yourself out there.</p><p>I didn't mention in the post that there's a link in my bio lol. So I don't think anyone's actually gone looking for it. Which is probably for the best at this stage. Let's call it a soft launch to less than 100 people who probably scrolled past without much thought.</p><p>I think I'll start promoting it more properly in the coming month. Once I've ironed out a few more bugs and got the Android version fully public.</p><p>I'd also love to do a little YouTube video about how I use the app myself and how I envision others using it. There's something about seeing an app in action that screenshots can't quite capture.</p><p>It's interesting how something as simple as an Instagram post can feel like quite a big step. But it's out there now. The logo is in the wild. People know I'm working on something.</p><p>If you happened to see the post and made it here... welcome. And thanks for being one of the very first to check out what I'm building.</p>

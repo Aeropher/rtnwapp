@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Discord is Live!"
+date: 2025-07-31 16:00:00 +0000
+---
+
+<p>Right, so I've been asking people to get in touch with feedback and ideas, but I haven't actually given you a proper way to do that. Bit silly of me! So I've just set up a Discord server for RightNow.</p><p>You can join here: <a href="https://discord.gg/YzYagEZcnt" target="_blank">discord.gg/YzYagEZcnt</a></p><p>This is where you can:</p><ul><li>Chat about productivity and task management</li><li>Share feedback on RightNow</li><li>Suggest features</li><li>Report bugs in a more casual way than GitHub issues</li><li>Connect with other RightNow users</li></ul><p>Now, I need to be completely honest - I have a full-time job, so I won't be online 24/7. I'll check in when I can, usually evenings and weekends UK time. But the beauty of Discord is that the community can help each other too!</p><p>I'm hoping this becomes a nice little community of people interested in productivity without the overwhelm. Come say hi if you fancy it. Or don't - no pressure!</p><p>Quick note though - if you have a bug report or feature request that you really want me to see and action, GitHub issues are still your best bet. Discord messages can easily get lost in the flow of conversation, but GitHub issues stay there until I deal with them. So Discord for chatting, GitHub for things you actually want done!</p><p>See you there (maybe)!</p>

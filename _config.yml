@@ -1,18 +1,35 @@
 # GitHub Pages Configuration
-title: RightNow Issues & Feedback
-description: Official issue tracker and feedback hub for RightNow - the capacity-first productivity app
+title: RightNow Blog
+description: Capacity-first task planning — updates and notes from development.
 url: https://blog.rtnw.app
 baseurl: ""
+author: Alex
 
 # Build settings
 markdown: kramdown
-theme: null  # We're using custom HTML/CSS
+theme: null  # We're using custom HTML/CSS + our own layouts
+permalink: /blog/:title/
 
-# Exclude files from site build
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Serve the generated feed at /rss.xml so existing links keep working
+feed:
+  path: rss.xml
+
+# Exclude non-site files from the build
 exclude:
   - README.md
   - CLAUDE.md
+  - FEATURES.md
+  - terms-of-service.md
   - .gitignore
   - .claude/
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - info/
 
 # GitHub Pages will serve index.html by default

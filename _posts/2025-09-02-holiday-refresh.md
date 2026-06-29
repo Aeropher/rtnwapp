@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Holiday Refresh and a Brutal Reality Check"
+date: 2025-09-02 10:00:00 +0000
+---
+
+<p>Hi all! I've been on holiday for a week and app development took a big back seat while I was away. Now I'm back and feeling refreshed, and the development journey begins fresh.</p><p>So the first thing I did was ask Claude to assess my codebase and be brutally honest about the quality and how close I am to production. And let me tell you... it was indeed brutally honest.</p><p>It gave me a score of 3/10.</p><p>It called the app "a prototype that grew too fast."</p><p>And that's true! I've been so focused on adding features and getting something working that I've let the code quality slip. Technical debt has been piling up, and it's time to face it head-on.</p><p>So we're doing some major refactoring right now. I can already see it's caused a number of regressions - things that were working are now broken again. But that's the nature of refactoring, isn't it? Sometimes you have to break things to make them better.</p><p>Out the other side, we'll have a more elegant and robust app. One that's actually maintainable and scalable. One that won't make me wince every time I open certain files.</p><p>It's humbling, really. But I'd rather know the truth now and fix it than launch something held together with duct tape and prayers.</p><p>Wish me luck! This might take a while, but it'll be worth it. And hey, at least I'm learning a ton about what not to do next time...</p>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/Logo1.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/Logo1.png' | relative_url }}">
+    {%- feed_meta -%}
+    {%- seo -%}
+    <style>
+        .back-link { display: inline-block; margin-bottom: 2rem; color: var(--primary-color); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .blog-intro { text-align: center; margin-bottom: 2.5rem; }
+        .blog-intro h2 { color: var(--primary-color); }
+        .post-list .blog-post { border-bottom: 1px solid var(--border-color, #e5e7eb); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+        .post-list h2 { margin: 0.25rem 0; }
+        .post-list h2 a { color: var(--text-primary); text-decoration: none; }
+        .post-list h2 a:hover { color: var(--primary-color); }
+        .read-more { color: var(--primary-color); text-decoration: none; font-weight: 600; }
+        .read-more:hover { text-decoration: underline; }
+        .post-meta { color: var(--text-secondary); font-style: italic; margin-bottom: 0.5rem; }
+        .single-post { max-width: 800px; margin: 0 auto; line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="{{ '/Logo1.png' | relative_url }}" alt="RightNow Logo" class="logo">
+                <div>
+                    <h1>RightNow</h1>
+                    <p class="tagline">Achieve more by doing less with capacity-first task planning</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="ko-fi-widget-container">
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                <script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#f59e0b', 'D1D1GWP6Z');kofiwidget2.draw();</script>
+            </div>
+            <p>&copy; 2025 RightNow.</p>
+            <div class="footer-links">
+                <a href="https://github.com/aeropher/rtnwapp">GitHub</a>
+                <a href="https://rtnw.app">Try RightNow</a>
+                <a href="{{ '/index.html' | relative_url }}">Home</a>
+                <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+                <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>
+                <a href="{{ '/terms-of-service.html' | relative_url }}">Terms of Service</a>
+                <a href="https://discord.gg/YzYagEZcnt">Discord</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

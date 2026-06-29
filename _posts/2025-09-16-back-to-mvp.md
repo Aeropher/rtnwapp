@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Back to MVP - Wahoo!"
+date: 2025-09-16 14:00:00 +0000
+---
+
+<p>Right, brilliant news! We're back to MVP status! After all that refactoring and regression fixing, I can finally dogfood the app again. Wahoo!</p><p>I'm getting a fresh Android build out today. There are still a couple of bugs hanging around - specifically some quirks with users being logged in or not logged in. Everything works perfectly if you're logged in, but if you're not... well, let's just say the experience isn't quite as smooth yet.</p><p>But here's the thing - I can actually use RightNow myself again! Do you know how frustrating it's been building a productivity app I couldn't even use for my own productivity? It's like being a chef who can't taste their own food. Now I'm back to eating my own cooking, as it were.</p><p>The refactoring work wasn't for nothing either. The codebase is so much cleaner now. Adding new features should be easier, fixing bugs should be quicker, and hopefully we won't see as many regressions going forward. Famous last words, I know!</p><p>So if you're on Android and fancy giving it a go, keep an eye out for the fresh build dropping today. Just... maybe make sure you're logged in for the best experience. I'll sort out those logged-out bugs soon, promise!</p><p>It feels proper good to be making forward progress again instead of just fixing things I broke. Onwards and upwards!</p>
