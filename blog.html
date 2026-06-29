@@ -4,20 +4,22 @@ title: Blog
 description: Updates, thoughts, and news from RightNow development.
 permalink: /blog.html
 ---
-<div class="blog-intro">
-    <h2>RightNow Blog</h2>
+<div class="wrap">
+  <div class="blog-intro">
+    <h1>RightNow Blog</h1>
     <p>Updates, thoughts, and news from development.</p>
     <a href="{{ '/rss.xml' | relative_url }}" class="read-more">RSS Feed</a>
-</div>
+  </div>
 
-<div class="posts-container post-list">
+  <div class="post-list">
     {% for post in site.posts %}
     <article class="blog-post">
-        <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-        </div>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+      <div class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </div>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
     </article>
     {% endfor %}
+  </div>
 </div>
