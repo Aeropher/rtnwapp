@@ -66,10 +66,12 @@ RightNow content had leaked across three places, duplicated and drifting:
 - [ ] **Commit + push** this repo; confirm GitHub Pages picks up the custom domain and
       enable "Enforce HTTPS".
 - [ ] **Fill ToS placeholders** (date, jurisdiction, support email) + lawyer review.
-- [ ] **Repoint the app** (`rightnow` repo, `lib/utils/legal_urls.dart`):
-      `privacyPolicy` → `https://blog.rtnw.app/privacy-policy.html`,
-      `termsOfService` → `https://blog.rtnw.app/terms-of-service.html`. Land in the same
-      release as the subdomain going live so links don't 404.
+- [x] **Repoint the app** (`rightnow` repo) — DONE in the working tree, pending commit +
+      next app release: `lib/utils/legal_urls.dart` now points at
+      `https://blog.rtnw.app/privacy-policy.html` and `.../terms-of-service.html`. Also
+      repointed the 5 general blog links (`aeropher_messages_linkable.dart`,
+      `help_info_settings_section.dart`, `beta_notice_card.dart`) from the old
+      `aeropher.github.io/rtnwapp/` to `https://blog.rtnw.app/blog.html`.
 - [ ] **Clean the personal blog** (`aeropher.github.io`): remove the 11 RightNow posts,
       the 3 `rightnow-*` pages, and loose product `.md` files — *after* the app no longer
       links to the personal-site privacy page.

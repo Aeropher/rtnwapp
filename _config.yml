@@ -31,5 +31,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - info/
+  - sync-crossposts.js
+  - DECISIONS.md
+  - prototype.html
 
 # GitHub Pages will serve index.html by default
