@@ -7,7 +7,7 @@ categories: introduction
 tags: [productivity, task-management, flutter]
 ---
 
-Welcome to RightNow, a revolutionary approach to task management that puts your daily capacity first. Unlike traditional to-do apps that let you pile on endless tasks, RightNow helps you plan realistic, achievable days by enforcing time-based constraints.
+RightNow is a task app that puts your daily capacity first. Where most to-do apps let you pile on endless tasks, RightNow helps you plan days you can actually finish, by treating your time as the budget it is.
 
 ## The Problem with Traditional Task Management
 
@@ -43,11 +43,11 @@ RightNow takes a fundamentally different approach: **capacity-first planning**. 
 - Learns from your patterns to improve estimates
 - Helps you understand where time really goes
 
-### 🎮 Gamified Task Grooming
-- Fun, swipe-based games to refine your backlog
+### 🎮 Refinement Games
+- Quick, swipe-based games to tidy your backlog
 - Improve task clarity, estimates, and priorities
-- Build better planning habits through engagement
-- Track your grooming streaks and progress
+- Build better planning habits without the chore feeling
+- Track your streaks and progress
 
 ### 📊 Smart Analytics
 - Productivity insights based on your actual data
@@ -61,9 +61,9 @@ RightNow takes a fundamentally different approach: **capacity-first planning**. 
 - Background sync when connected
 - Your data is always accessible
 
-## Why RightNow Works
+## Why I Think It Works
 
-RightNow succeeds where other apps fail because it:
+The difference comes down to a few things:
 
 1. **Enforces realistic constraints** - You can't schedule 12 hours of work in an 8-hour day
 2. **Provides immediate feedback** - See capacity impact before committing
@@ -78,30 +78,23 @@ RightNow succeeds where other apps fail because it:
 - **Freelancers** tracking billable hours
 - **Anyone** who wants to be more realistic about their time
 
-## Built with Modern Technology
+## Under the Hood
 
-RightNow is built using cutting-edge technology for the best possible experience:
-
-- **Flutter** for beautiful, native performance on all platforms
-- **Offline-first** architecture for reliability
+- **Flutter**, so the same app runs on web and mobile
+- **Offline-first** architecture — it works without a connection
 - **Cloud sync** for access across devices
-- **Material Design 3** for intuitive, modern UI
+- **Material Design 3** for the UI
 
-## Get Started Today
+## Get Started
 
-Ready to take control of your time? RightNow is available on:
-- 📱 Android (Google Play Store)
-- 🍎 iOS (Coming Soon)
-- 🌐 Web (rightnow01.web.app)
-- 📖 Learn More: [RightNow App Development](/rightnow/)
-- 💻 Desktop (Windows, Mac, Linux)
-
-Stop overcommitting. Start achieving. Welcome to RightNow.
+- 🌐 Web: [rtnw.app](https://rtnw.app) — free, no account needed to start
+- 📱 Android: in testing
+- 🍎 iOS: planned
 
 ---
 
-*Next: [Getting Started with RightNow →](/blog/getting-started-guide)*
+*Next: [Getting Started with RightNow →](/blog/getting-started-guide/)*
 
 ---
 
-*Learn more about RightNow: [App Development Page](/rightnow/) | [Privacy Policy](/rightnow-privacy-policy/) | [Delete Account](/rightnow-delete-account/)*
+*More: [Privacy Policy](/privacy-policy.html) | [Delete Account](/delete-account.html)*

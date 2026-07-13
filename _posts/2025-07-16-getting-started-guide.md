@@ -7,7 +7,7 @@ categories: guides
 tags: [tutorial, getting-started, workflow]
 ---
 
-Welcome! This guide will walk you through your first day with RightNow, helping you set up a sustainable productivity system that actually works. Let's dive in!
+This guide walks you through your first day with RightNow — enough to get a working setup without reading a manual.
 
 ## First Launch: Setting Your Daily Capacity
 
@@ -31,7 +31,7 @@ graph LR
 
 ## Creating Your First Tasks
 
-Now let's add some tasks. RightNow makes this super simple:
+Now add some tasks:
 
 1. **Tap the task creation bar** at the bottom
 2. **Type your task** (e.g., "Review project proposal")
@@ -48,29 +48,30 @@ graph TD
     E --> F
 ```
 
-## Understanding the Three Screens
+## Understanding the Main Screens
 
-RightNow has three main areas:
+RightNow has four tabs along the bottom:
 
-### 📅 Today Screen
-Your command center for the current day:
+### 🌅 Today
+Where you work from:
 - Shows only tasks scheduled for today
 - Displays your capacity usage
 - Allows drag-and-drop reordering
-- Features the time tracking controls
+- The task you're doing right now gets a green border
 
-### 📋 All Tasks Screen
+### 📋 Inbox
 Your complete task backlog:
-- Shows all unscheduled tasks
-- Allows bulk scheduling to today
-- Supports advanced filtering and search
-- Perfect for weekly planning sessions
+- Everything you've captured but not scheduled
+- Bulk scheduling to today
+- Filtering, search, and the refinement games
+- Good for a weekly planning session
 
-### ⚙️ Settings Screen
-Customize your experience:
-- Adjust daily capacity
-- Manage tags and filters
-- View analytics
+### 📅 Calendar
+Your tasks laid out across days — handy for spotting overloaded ones before they happen.
+
+### ⚙️ Settings
+- Adjust daily capacity and work-day hours
+- Manage tags
 - Configure app preferences
 
 ## Your First Workflow
@@ -95,14 +96,13 @@ graph TD
 ```
 
 ### During the Day
-- **Start tracking** when you begin a task (tap the play button)
-- **Stop tracking** when you finish or take a break
-- **Complete tasks** with a satisfying swipe
-- **Reschedule** if plans change
+- **Mark the task you're working on** — it goes green and sits at the top
+- **Tick tasks off** as you finish them
+- **Reschedule** if plans change — no guilt, just honesty
 
 ### End of Day Review (3 minutes)
 1. Complete or reschedule remaining tasks
-2. Celebrate what you accomplished!
+2. Take a second to notice what you finished
 3. Quick look at tomorrow's capacity
 
 ## Power User Tips
@@ -145,11 +145,11 @@ graph TD
 Try this progression over your first week:
 
 1. **Day 1**: Add 5 tasks, complete 3
-2. **Day 2**: Use time tracking on 2 tasks
-3. **Day 3**: Try the task grooming games
+2. **Day 2**: Compare a couple of estimates against reality
+3. **Day 3**: Try the refinement games
 4. **Day 4**: Create and use 3 tags
 5. **Day 5**: Review your analytics
-6. **Weekend**: Plan next week using insights
+6. **Weekend**: Plan next week using what you learned
 
 ## Troubleshooting
 
@@ -164,26 +164,24 @@ Try this progression over your first week:
 - Review analytics weekly
 
 ### "Too many tasks in my backlog!"
-- Use the grooming games weekly
-- Archive tasks you won't do
+- Play the refinement games weekly
+- Delete tasks you're never going to do (be honest)
 - Focus on this week only
 
 ## Next Steps
 
 Now that you're up and running:
 
-1. **Explore task grooming** - Make it a Friday ritual
-2. **Check analytics** - Learn from your patterns  
-3. **Customize settings** - Make it yours
-4. **Share feedback** - We're building this together!
-
-Welcome to a more realistic, sustainable way of working. Welcome to RightNow!
+1. **Make the refinement games a ritual** — Friday afternoons work well
+2. **Check analytics** — learn from your patterns
+3. **Customize settings** — make it yours
+4. **Send feedback from inside the app** — I read all of it
 
 📱 **Get Started:**
-- [RightNow App Development](/rightnow/)
-- [Privacy Policy](/rightnow-privacy-policy/)
-- [Delete Account](/rightnow-delete-account/)
+- [Try RightNow on the web](https://rtnw.app)
+- [Privacy Policy](/privacy-policy.html)
+- [Delete Account](/delete-account.html)
 
 ---
 
-*Previous: [Development Journey & Changelog ←](/blog/development-journey-changelog) | Next: [Core Features Deep Dive →](/blog/core-features-walkthrough)*
+*Previous: [Development Journey ←](/blog/development-journey-changelog/) | Next: [Core Features Deep Dive →](/blog/core-features-walkthrough/)*

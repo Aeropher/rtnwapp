@@ -8,7 +8,7 @@ tags: [task-management, productivity, flutter, mobile-development]
 featured: false
 ---
 
-If you've ever felt overwhelmed by your task list or ended the day wondering where all your time went, you might enjoy exploring a different approach to productivity. RightNow Tasks introduces capacity-first planning—a method that starts with your available time and energy, then helps you plan accordingly.
+Most task apps let you pile up more work than a day can hold. RightNow takes a different starting point: capacity-first planning. You start with the time you actually have, then plan inside it.
 
 ## What is Capacity-First Planning?
 
@@ -16,7 +16,7 @@ Instead of starting with an endless list of tasks, capacity-first planning begin
 
 ## How Capacity-First Planning Works
 
-Here's the simple three-step process that makes this approach so effective:
+It comes down to three steps:
 
 ### 1. Set Your Daily Capacity
 
@@ -30,14 +30,9 @@ As you plan your day, a progress bar shows how much of your capacity you've allo
 
 When it's time to work, RightNow presents one simple question: "What should I do right now?" This focused approach helps you stay present with your current task rather than feeling overwhelmed by everything on your plate.
 
-## Real-World Impact
+## What I've Noticed So Far
 
-Since implementing this approach, our beta users report:
-
-- 73% higher task completion rates
-- Reduced end-of-day stress and guilt
-- Better estimation skills over time
-- A healthier relationship with productivity
+The app is still early, so I won't pretend to have numbers. What I can say from using it myself and from early testers: finishing the list you set feels a lot better than abandoning half of one, and being told "the day is full" turns out to be a relief rather than a restriction.
 
 ## The Technical Implementation
 
@@ -53,7 +48,7 @@ bool canAddTask(Task task, double dailyCapacity) {
 }
 ```
 
-The key is making the constraint feel empowering rather than limiting. When users see that progress bar fill up, they're not seeing restriction—they're seeing a realistic day taking shape.
+The key is making the constraint feel helpful rather than nagging. When the bar fills up, what you're looking at is a realistic day taking shape.
 
 ## Learning and Growing
 
@@ -68,10 +63,6 @@ Capacity-first planning works especially well if you:
 - Prefer realistic planning over aspirational goals
 - Value work-life balance and sustainable productivity
 
-It's not about doing less—it's about being intentional with your time and energy.
-
 ## Try It Yourself
 
-If capacity-first planning sounds like something you'd like to explore, RightNow Tasks is currently in beta for Android. We'd love to have you [join our community](/rightnow/) and discover a more balanced approach to daily productivity.
-
-Remember, there's no one-size-fits-all solution to productivity. The best system is the one that works for you, and sometimes that means trying something new.
+If that sounds like your kind of thing, [RightNow is free to try on the web](https://rtnw.app) — no account needed to start.

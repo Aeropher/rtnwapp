@@ -11,20 +11,7 @@ As an indie developer building RightNow in public, I want to share the technical
 
 ## The Numbers: A Growing Codebase
 
-Let's start with some stats that show the scale of this project:
-
-- **44,724 lines** of Dart code in the app
-- **9,798 lines** of test code  
-- **41 test files** with 258 tests passing
-- **9 major milestones** completed
-- **6 months** of active development
-
-```mermaid
-pie title "Code Distribution"
-    "App Code" : 44724
-    "Test Code" : 9798
-    "Config/Scripts" : 5000
-```
+For a sense of scale: the app is somewhere north of 40,000 lines of Dart, with roughly another 10,000 lines of tests. Big enough that architecture decisions matter; small enough that one person can still hold it in their head. Mostly.
 
 ## Architecture: Why Offline-First?
 
@@ -82,7 +69,7 @@ graph LR
     E --> G[Test Data]
 ```
 
-This pattern has been a game-changer for:
+This pattern has paid for itself many times over:
 - **Testing** - Swap real/mock repositories easily
 - **Features** - Add new data sources without touching UI
 - **Debugging** - Clear separation of layers
@@ -235,7 +222,7 @@ flutter test
 flutter build web
 firebase deploy
 flutter build appbundle
-fastlane upload
+:: then upload the bundle to the Play Console
 ```
 
 ## Lessons for Other Indie Developers
@@ -243,8 +230,8 @@ fastlane upload
 ### 1. Start Shipping Early
 Don't wait for perfection. My first version had 5 features, not 50.
 
-### 2. Listen to Users
-The best features came from user feedback, not my ideas.
+### 2. Use Your Own App
+I'm my own harshest tester. The best fixes came from being annoyed by my own software daily.
 
 ### 3. Automate Everything
 Time spent on automation pays back 10x.
@@ -257,35 +244,24 @@ This blog post was easier because I kept notes.
 
 ## What's Next?
 
-The technical journey continues:
+Technically speaking, the areas I keep poking at — no promises:
 
-- **Real-time sync** - WebSocket integration
-- **Collaborative features** - Shared task lists
-- **AI integration** - Smart task suggestions
-- **Plugin system** - Let users extend functionality
-
-## Open Source Plans
-
-I'm considering open-sourcing parts of RightNow:
-
-- The task grooming game engine
-- The offline-first sync system  
-- The capacity management algorithm
-- Testing utilities I've built
+- Making sync more robust (it's the hardest part of the codebase, and probably always will be)
+- Smarter estimation help based on your own history
+- More refinement game modes
 
 ## Join the Journey
 
 Building in public means sharing the good and the bad. Follow along:
 
-- 📱 Try the app: [rightnow01.web.app](https://rightnow01.web.app)
-- 📖 Learn more: [RightNow App Development](/rightnow/)
-- 📝 Blog series: [All RightNow posts](/blog/)
+- 📱 Try the app: [rtnw.app](https://rtnw.app)
+- 📝 Blog series: [All RightNow posts](/blog.html)
 
-Have questions? Want to share your experience? I'd love to hear from you!
+Have questions? Want to share your experience? I'd love to hear from you.
 
 ---
 
-*Previous: [Target Audience & Use Cases ←](/blog/target-audience-use-cases) | Next: [Introduction to RightNow →](/blog/introduction-to-rightnow)*
+*Previous: [Who RightNow is For ←](/blog/target-audience-use-cases/) | Next: [Introduction to RightNow →](/blog/introduction-to-rightnow/)*
 
 ---
 

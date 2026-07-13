@@ -7,60 +7,43 @@ RightNow is a capacity-first productivity app that helps you manage your time an
 ## Core Features
 
 ### 🎯 Capacity-First Planning
-- **Smart Capacity Tracking**: Set your daily work capacity and let RightNow help you plan realistically
-- **Automatic Overflow Management**: Tasks that don't fit today's capacity automatically move to tomorrow
-- **Visual Capacity Indicators**: See at a glance how full your day is
+- **Daily Capacity**: Set how much time you actually have today; the capacity bar fills from green to orange as you commit it
+- **Over-Capacity Warnings**: When the day is full, RightNow tells you — schedule more only if you deliberately override
+- **Estimation Learning**: Compare estimated vs actual time on completed tasks and get better at planning
 
 ### 📋 Task Management
-- **Quick Task Entry**: Add tasks with natural language input
-- **Time Estimation**: Assign realistic time estimates to each task
-- **Priority Levels**: Mark tasks as high, medium, or low priority
-- **Task Categories**: Organize tasks by project or category
-- **Recurring Tasks**: Set up tasks that repeat daily, weekly, or monthly
+- **Quick Task Entry**: Add tasks with natural language input (dates, priority, duration, #tags parsed as you type)
+- **Time Estimates**: Every task carries a duration; quick presets for common lengths
+- **Priorities & Tags**: High/medium/low priority with colour coding, plus custom colour-coded tags
+- **Subtasks & Checklists**: Break bigger tasks down
+- **Search & Filters**: Fuzzy search, quick filter chips, advanced filters, saved filter combinations
+- **Recurring Tasks**: Daily through yearly repeats, weekday pinning, and catch-up when you miss a day
+- **Rollover Boost**: Yesterday's unfinished tasks float to the top today, then gently decay back to normal priority
 
-### 📊 Analytics & Insights
-- **Daily Performance Tracking**: See how well you estimated vs actual time spent
-- **Weekly/Monthly Reports**: Understand your productivity patterns over time
-- **Capacity Utilization**: Track how efficiently you're using your available time
-- **Task Completion Rates**: Monitor which types of tasks you complete most effectively
+### 🃏 Refinement Games
+- **Backlog Grooming, Gamified**: Quick swipe games to sharpen your backlog — set priorities, check durations, clarify vague tasks, keep-or-delete, and spot duplicates
+- **Achievements & Backlog Health**: Track your streaks and how actionable your backlog is
 
-### 🔄 Smart Scheduling
-- **Auto-Scheduling**: RightNow automatically arranges tasks based on priority and capacity
-- **Buffer Time**: Built-in breaks between tasks to prevent burnout
-- **Flexible Rescheduling**: Easily move tasks between days with drag-and-drop
-- **Time Blocking**: Reserve specific time slots for important work
+### 📅 Today Screen
+- **One Focused List**: Sorted by what matters right now, with drag-to-reorder
+- **Focus Mode**: A full-screen timer for the task you're working on; actual time feeds back into estimation learning
+- **Google Calendar**: See your calendar events alongside your tasks
 
-### 📱 Cross-Platform Sync
+### 📱 Cross-Platform
 - **Web Application**: Full-featured web app at https://rtnw.app
-- **Android App**: Native Android experience (currently in closed testing)
-- **iOS App**: Coming soon
-- **Real-Time Sync**: Changes sync instantly across all your devices
-- **Offline Mode**: Continue working even without internet connection
+- **Android App**: In testing
+- **iOS App**: Planned
+- **Offline First**: Works without an internet connection; no account needed to start
+
+### ☁️ Premium: Cloud Sync
+- **Real-Time Sync**: Changes sync across your devices
+- **Offline Queue**: Work offline; changes sync when you reconnect
+- The free version stays free on your own device — sync across devices is the paid part, because that's the part that costs money to run
 
 ### 🎨 Customization
-- **Themes**: Choose between light and dark modes
-- **Custom Work Hours**: Set your specific work schedule
-- **Notification Preferences**: Control when and how you receive reminders
-- **Dashboard Customization**: Arrange widgets to match your workflow
-
-### 🤝 Collaboration Features
-- **Team Capacity View**: See your team's collective capacity (Pro feature)
-- **Task Delegation**: Assign tasks to team members
-- **Shared Projects**: Collaborate on projects with capacity awareness
-- **Comments & Updates**: Keep everyone informed on task progress
-
-### 🧠 Smart Features
-- **AI-Powered Time Estimates**: Get suggestions for task duration based on historical data
-- **Smart Notifications**: Reminders that adapt to your working patterns
-- **Focus Mode**: Minimize distractions during deep work sessions
-- **Energy Level Tracking**: Plan demanding tasks when you're at your peak
-
-### 📈 Premium Features
-- **Unlimited Task History**: Access all your completed tasks
-- **Advanced Analytics**: Deeper insights into your productivity patterns
-- **Custom Integrations**: Connect with other productivity tools
-- **Priority Support**: Get help when you need it
-- **Team Features**: Manage capacity across your entire team
+- **Dark Theme**: A single, focused dark look
+- **Work Day Settings**: Set your capacity, reset time, and work-day hours
+- **Notifications**: Due-date reminders and a daily planning prompt, all optional
 
 ## Why RightNow?
 
@@ -69,20 +52,19 @@ Unlike traditional to-do apps that encourage endless task lists, RightNow helps 
 - Reduce overwhelm and stress
 - Improve time estimation skills
 - Actually complete what you plan
-- Maintain work-life balance
 
 ## Getting Started
 
-1. Sign up at [https://rtnw.app](https://rtnw.app)
-2. Set your daily work capacity
+1. Open [https://rtnw.app](https://rtnw.app) — no account needed
+2. Set your daily capacity
 3. Add your tasks with time estimates
-4. Let RightNow organize your day
+4. Commit only what fits
 5. Track your progress and adjust as needed
 
 ## Platform Availability
 
 - **Web**: Available now at https://rtnw.app
-- **Android**: In closed testing (join the waitlist)
-- **iOS**: Coming soon
+- **Android**: In testing
+- **iOS**: Planned
 
-For feature requests or bug reports, please use our [GitHub Issues](https://github.com/USERNAME/rtnwapp/issues).
+For feature requests or bug reports, please use our [GitHub Issues](https://github.com/aeropher/rtnwapp/issues).

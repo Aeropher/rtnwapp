@@ -1,0 +1,93 @@
+# Publishes a blog post from a GitHub issue when the "publish" label is added.
+# Write the post as an issue (📝 Blog post template) from any device — the
+# GitHub mobile app works well — then label it "publish" to make it live.
+# Re-adding the label after editing the issue republishes to the same URL.
+
+name: Publish blog post from issue
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  publish:
+    if: >
+      github.event.label.name == 'publish' &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Write the post file
+        id: post
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set -euo pipefail
+
+          # Slug from the title: lowercase, runs of non-alphanumerics -> hyphens.
+          slug=$(printf '%s' "$ISSUE_TITLE" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+          if [ -z "$slug" ]; then
+            echo "Could not derive a slug from the issue title." >&2
+            exit 1
+          fi
+
+          # Republish support: if a post with this slug already exists, reuse
+          # its file (and date) so the URL never changes on edits.
+          existing=$(ls _posts/*-"$slug".md 2>/dev/null | head -n 1 || true)
+          if [ -n "$existing" ]; then
+            file="$existing"
+            postdate=$(awk '/^date:/ { sub(/^date: */, ""); print; exit }' "$existing")
+          else
+            file="_posts/$(date -u +%F)-$slug.md"
+            postdate="$(date -u '+%F %H:%M:%S') +0000"
+          fi
+
+          # Body = the issue markdown verbatim, minus HTML comments (the
+          # template's instructions) and Windows line endings.
+          body=$(printf '%s' "$ISSUE_BODY" | tr -d '\r' | perl -0pe 's/<!--.*?-->//gs')
+
+          escaped_title=${ISSUE_TITLE//\"/\\\"}
+          {
+            printf -- '---\n'
+            printf 'layout: post\n'
+            printf 'title: "%s"\n' "$escaped_title"
+            printf 'date: %s\n' "$postdate"
+            printf -- '---\n\n'
+            printf '%s\n' "$body"
+          } > "$file"
+
+          echo "file=$file" >> "$GITHUB_OUTPUT"
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.post.outputs.file }}"
+          if git diff --cached --quiet; then
+            echo "No changes to publish (post already up to date)."
+            exit 0
+          fi
+          git commit -m "blog: publish issue #${{ github.event.issue.number }}: $ISSUE_TITLE"
+          git push
+
+      - name: Confirm on the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create published --color 2E7D32 --description "Post is live on the blog" --repo ${{ github.repository }} 2>/dev/null || true
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} \
+            --body "Published: https://blog.rtnw.app/blog/${{ steps.post.outputs.slug }}/ — live once Pages rebuilds (a minute or two). Edit this issue and re-add the publish label to update the post."
+          gh issue edit ${{ github.event.issue.number }} --repo ${{ github.repository }} --remove-label publish --add-label published || true
+          gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}

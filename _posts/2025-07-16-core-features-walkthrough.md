@@ -7,11 +7,11 @@ categories: features
 tags: [features, walkthrough, productivity, user-guide]
 ---
 
-Let's take a deep dive into what makes RightNow different. This isn't just another feature list - it's a guided tour through the philosophy and functionality that makes capacity-first planning work.
+A proper tour of what's in RightNow and why each piece exists — the philosophy as much as the functionality.
 
-## 🎯 The Capacity System: Your North Star
+## 🎯 The Capacity System
 
-The capacity bar isn't just visual decoration - it's the core constraint that makes everything else work.
+The capacity bar is the core constraint that makes everything else work.
 
 ```mermaid
 graph LR
@@ -40,7 +40,7 @@ Traditional apps let you add infinite tasks. RightNow says "Hold on - you only h
 
 ## ⏱️ Time Tracking That Actually Helps
 
-Most time tracking feels like surveillance. Ours feels like learning.
+Most time tracking feels like surveillance. This is meant to feel like learning.
 
 ```mermaid
 graph TD
@@ -58,52 +58,29 @@ graph TD
 - **Flexible Tracking**: Pause, resume, or adjust as needed
 - **Privacy First**: All data stays on your device
 
-### What Users Discover
+### What You Discover
 
-*"I thought emails took 5 minutes. They actually take 20 minutes on average."*
+The kind of thing this surfaces (speaking from experience): the emails you think take 5 minutes take 20, and writing takes far longer than you'd ever estimate. Uncomfortable, but exactly the feedback that makes next week's plan better.
 
-*"My most productive hours are 10am-12pm, not after lunch like I thought."*
+## 🎮 Refinement Games: Making Planning Fun
 
-*"Writing takes 3x longer than I estimate, but coding is pretty accurate."*
+The most unusual feature in RightNow — backlog upkeep as quick games rather than a chore.
 
-## 🎮 Task Grooming Games: Making Planning Fun
+### This or That
 
-The most unique feature in RightNow - gamified task management that people actually enjoy.
-
-### The Priority Game
-
-```mermaid
-graph LR
-    A[Task Card] --> B[Swipe Up = High Priority]
-    A --> C[Swipe Down = Low Priority]
-    A --> D[Swipe Left = Maybe Later]
-    B --> E[Score Points]
-    C --> E
-    D --> E
-```
-
-**How It Works:**
-- Swipe up for high priority tasks
-- Swipe down for low priority  
-- Swipe left for "maybe later"
-- Build streaks for consistent grooming
+Two tasks, head to head: which would you rather get done? A few rounds of honest snap judgements and your backlog is ranked by what actually matters to you, not what you claimed mattered when you wrote it down.
 
 ### The Duration Game
 
-Quick time estimation made fun:
+One task at a time, one question: how long will this really take? Tap an estimate or split the task in two if it's clearly more than one sitting. Tasks still wearing the default estimate come up first — those are the ones nobody ever thought about.
 
-- **Swipe Right**: "This will take longer than expected"
-- **Swipe Left**: "This is quicker than it looks"
-- **Swipe Up**: "Perfect estimate as-is"
+### Make It Doable
 
-### The Clarity Game
+Vague tasks are where procrastination breeds. This drill shows you a task and asks: could you start this right now from the title alone? If not, sharpen it or break it down on the spot.
 
-Improve task descriptions through interaction:
+### Keep or Delete
 
-- Rate task clarity (1-5 stars)
-- Add missing details
-- Break down vague tasks
-- Score points for improvements
+The honesty drill. Old, stale tasks come up one at a time: keep it, shelve it for someday, or admit it's never happening and let it go.
 
 ### Why Games Work
 
@@ -150,10 +127,9 @@ graph TD
 
 ### Personalized Recommendations
 
-- "Schedule important tasks for Tuesday mornings"
 - "Add 15 minutes to your writing estimates"
 - "Consider reducing capacity from 7 to 6 hours"
-- "You haven't groomed tasks in 3 days - quick session?"
+- "Your backlog could use a quick refinement session"
 
 ## 🔍 Smart Search & Filtering
 
@@ -230,23 +206,6 @@ Simple enough for beginners, powerful enough for power users.
 - `#urgent`, `#important`, `#someday`
 - `#client-work`, `#internal`
 
-### Tag Intelligence
-
-The app learns from your tagging patterns:
-
-```mermaid
-graph TD
-    A[Tag Usage] --> B[Pattern Recognition]
-    B --> C[Auto-Suggestions]
-    B --> D[Workflow Optimization]
-    B --> E[Context Switching Insights]
-```
-
-**Smart Suggestions:**
-- "Tasks tagged #writing usually take 45 minutes"
-- "You're most productive with #creative tasks at 10am"
-- "Consider batching #administrative tasks on Fridays"
-
 ## 🗓️ Flexible Scheduling
 
 Move tasks between days without losing context.
@@ -297,8 +256,7 @@ graph LR
 
 **Subtask Features:**
 - Simple checkboxes for micro-tasks
-- Stored in task description (no database bloat)
-- Reorderable for workflow optimization
+- Reorderable as your plan changes
 - Progress tracking for complex tasks
 
 ## 🔄 Cross-Platform Sync
@@ -317,10 +275,9 @@ graph TD
 
 ### Platform Support
 
-- **Android**: Full native experience
-- **iOS**: Coming soon
-- **Web**: Full functionality at rightnow01.web.app
-- **Desktop**: Windows, Mac, Linux support
+- **Web**: full functionality at [rtnw.app](https://rtnw.app)
+- **Android**: in testing
+- **iOS**: planned
 
 ### Sync Intelligence
 
@@ -342,47 +299,35 @@ Make RightNow work for your unique workflow.
 
 ### Interface Preferences
 
-- **Theme**: Light/dark mode support
-- **Notifications**: Configurable reminders
+- **Theme**: one focused dark look (deliberately — no theme rabbit holes)
+- **Notifications**: configurable reminders
 - **Time format**: 12h or 24h display
-- **First day of week**: Cultural preferences
 
-### Advanced Settings
+## 🔮 Ideas I'm Chewing On
 
-- **Estimation algorithm**: Conservative vs. optimistic
-- **Grooming reminders**: Frequency and timing
-- **Analytics privacy**: What data to track
-- **Export options**: Get your data out anytime
+No promises or dates — just directions I keep coming back to:
 
-## 🔮 What's Coming Next
-
-RightNow is actively developed with user feedback driving features:
-
-- **Team collaboration**: Shared capacity planning
-- **Calendar integration**: Two-way sync with Google/Outlook
-- **AI insights**: Smarter pattern recognition
-- **Habit tracking**: Build consistent routines
-- **API access**: Integrate with other tools
+- Deeper calendar integration
+- Smarter estimation help based on your history
+- More refinement game modes
 
 ## Making It Work for You
 
 Every feature in RightNow is designed around one principle: **sustainable productivity**. Not doing more, but doing the right things within your actual capacity.
 
-The magic happens when all these features work together:
+It comes together like this:
 1. **Capacity** keeps you realistic
 2. **Time tracking** builds awareness
-3. **Grooming games** maintain your backlog
+3. **Refinement games** maintain your backlog
 4. **Analytics** guide improvements
 5. **Scheduling** manages your time
 6. **Focus mode** supports deep work
 
-Ready to experience it yourself? Try RightNow and discover what realistic planning feels like.
-
-📱 **Try RightNow Today:**
-- [Main App Page](/rightnow/)
-- [Privacy Policy](/rightnow-privacy-policy/)
-- [Delete Account](/rightnow-delete-account/)
+📱 **Try RightNow:**
+- [rtnw.app](https://rtnw.app) — free on the web, no account needed to start
+- [Privacy Policy](/privacy-policy.html)
+- [Delete Account](/delete-account.html)
 
 ---
 
-*Previous: [Introduction to RightNow ←](/blog/introduction-to-rightnow) | Next: [Development Journey & Changelog →](/blog/development-journey-changelog)*
+*Previous: [Introduction to RightNow ←](/blog/introduction-to-rightnow/) | Next: [Development Journey →](/blog/development-journey-changelog/)*

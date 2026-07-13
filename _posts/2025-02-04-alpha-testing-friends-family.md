@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shipping Your Baby: The Raw Truth About Alpha Testing with Friends and Family"
+title: "Alpha Testing with Friends and Family"
 date: 2025-02-04
 crosspost: true
 categories: [development, rightnow, startup-life]

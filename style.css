@@ -106,20 +106,31 @@ h1 .grad { background: linear-gradient(120deg, var(--green-l), var(--orange)); -
 .cta { display: flex; gap: 12px; flex-wrap: wrap; }
 .trust { margin-top: 22px; font-size: 0.82rem; color: var(--text-faint); }
 
-/* App preview card */
+/* App preview card — mirrors the shipped Today screen: pill capacity bar,
+   one cycling stat line, glass rows, priority-coloured squircle checkboxes,
+   green-bordered active task, and the add-a-task pill. */
 .preview { padding: 22px; }
 .preview .ptop { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
 .preview .ptop b { font-weight: 700; font-size: 1.05rem; }
 .preview .ptop span { color: var(--text-faint); font-size: 0.85rem; }
-.bar { height: 14px; border-radius: var(--radius); background: rgba(128, 128, 128, 0.15); overflow: hidden; position: relative; }
-.bar > i { position: absolute; inset: 0 23% 0 0; border-radius: var(--radius); background: linear-gradient(90deg, var(--green), var(--orange)); display: block; }
-.preview .meta { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-faint); margin-top: 8px; }
+.preview .ptop .menu { font-style: normal; font-size: 1rem; margin-left: 6px; opacity: 0.8; }
+.bar { height: 10px; border-radius: 999px; background: rgba(128, 128, 128, 0.15); overflow: hidden; position: relative; }
+.bar > i { position: absolute; inset: 0 23% 0 0; border-radius: 999px; background: linear-gradient(90deg, var(--green), var(--orange)); display: block; }
+.preview .meta { display: flex; font-size: 0.78rem; color: var(--text-faint); margin-top: 8px; }
 .tasks { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
 .task { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); font-size: 0.88rem; }
-.task .tick { width: 16px; height: 16px; border-radius: 5px; border: 1.5px solid var(--text-faint); flex: 0 0 auto; }
-.task.done .tick { background: var(--green); border-color: var(--green); }
+.task .tick { width: 16px; height: 16px; border-radius: 5px; border: 2px solid var(--text-faint); flex: 0 0 auto; }
+/* In-app checkboxes are colour-coded by priority */
+.task .tick.p-high { border-color: #A335EE; }
+.task .tick.p-med { border-color: #0070DD; }
+.task.done .tick { background: #9d9d9d; border-color: #9d9d9d; }
 .task.done span { color: var(--text-faint); text-decoration: line-through; }
-.task small { margin-left: auto; color: var(--text-faint); font-size: 0.74rem; }
+/* The task being worked on right now gets the green border in-app */
+.task.active { border: 1.5px solid var(--green); background: transparent; }
+.task small { margin-left: auto; color: var(--text-faint); font-size: 0.74rem; display: inline-flex; align-items: center; gap: 5px; }
+.task small .play { font-style: normal; color: var(--green); font-size: 0.7rem; }
+.addbar { margin-top: 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 8px 9px 16px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: 0.85rem; color: var(--text-faint); }
+.addbar .plus { width: 26px; height: 26px; border-radius: 999px; display: grid; place-items: center; background: var(--green); color: var(--btn-text); font-weight: 700; box-shadow: 0 4px 14px -4px rgba(102, 187, 106, 0.6); }
 
 /* Feature grid */
 .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 16px 0 36px; }

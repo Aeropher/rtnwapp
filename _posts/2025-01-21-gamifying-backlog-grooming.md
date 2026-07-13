@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gamifying Productivity: How RightNow Tasks Makes Backlog Grooming Fun"
+title: "Turning Backlog Cleanup into a Game"
 date: 2025-01-21
 crosspost: true
 categories: [productivity, rightnow, gamification]
@@ -8,13 +8,13 @@ tags: [gamification, ux-design, flutter, mobile-development]
 featured: false
 ---
 
-Let's be honest: backlog grooming is about as exciting as cleaning your garage. It's necessary, but nobody actually wants to do it. That's why most task backlogs become digital junkyards—full of outdated tasks, vague ideas, and that "learn Spanish" task from 2019.
+Tidying up your task backlog is about as exciting as cleaning the garage. It's necessary, but nobody actually wants to do it. That's why most backlogs become digital junkyards — full of outdated tasks, vague ideas, and that "learn Spanish" task from 2019.
 
-At RightNow Tasks, we asked ourselves: what if backlog grooming could actually be... fun?
+So I asked myself: what if sorting out your backlog could actually be... fun?
 
-## The Three Games That Changed Everything
+## Three Little Games
 
-Instead of presenting users with a daunting list to manually sort through, we created three focused mini-games. Each game takes just 2-3 minutes and targets a specific aspect of task quality.
+Instead of a daunting list to manually sort through, RightNow has focused mini-games. Each takes a couple of minutes and targets one specific aspect of task quality.
 
 ### 1. The Priority Game: "What Matters More?"
 
@@ -38,24 +38,24 @@ After 20-30 comparisons, your entire backlog is sorted by what actually matters 
 
 A task appears with its estimated duration. You have 5 seconds to decide: is this estimate still accurate? Swipe right for yes, left for no. If no, quickly tap a new duration from our preset options (15m, 30m, 1h).
 
-The genius? The time pressure prevents overthinking. Users report their gut-reaction estimates are actually more accurate than their carefully considered ones.
+The time pressure is the point — it prevents overthinking. My gut-reaction estimates have turned out more honest than my carefully considered ones.
 
 ### 3. The Clarity Game: "Crystal Clear or Fuzzy?"
 
 Tasks flash by one at a time. Is this task clear enough to start immediately? Swipe right for clear, left for fuzzy. Fuzzy tasks get flagged for quick editing later.
 
-This game revealed something fascinating: about 40% of tasks in typical backlogs are too vague to actually execute. No wonder people procrastinate!
+Playing this on my own backlog was humbling: a surprising share of my tasks were too vague to actually start. No wonder they'd been sitting there.
 
 ## The Psychology Behind the Design
 
 ### Immediate Feedback
-Each swipe provides instant visual and haptic feedback. Your brain's reward centers light up, creating a micro-dose of satisfaction that keeps you engaged.
+Each swipe gives instant visual and haptic feedback. Small, satisfying, keeps you going.
 
 ### Bounded Time Investment
-Each game has a clear end point—usually 2-3 minutes. This prevents grooming fatigue and makes it easy to fit into small breaks.
+Each game has a clear end point — a couple of minutes. Easy to fit into a small break, and it never turns into a chore session.
 
 ### Progress Visualization
-Watch your backlog health score improve in real-time. Seeing that number climb from 43% to 87% is surprisingly addictive.
+You can watch your backlog health improve as you play, which is more motivating than I expected.
 
 ## Implementation Challenges
 
@@ -81,27 +81,10 @@ class SwipeableTaskCard extends StatelessWidget {
 
 The key was pre-loading the next several tasks and keeping animations under 16ms for that crucial 60fps feel.
 
-## Real Results
+## An Unexpected Side Effect
 
-After launching the grooming games, our analytics showed:
-- 73% of users groom their backlog at least weekly (vs. 12% before)
-- Average backlog health score improved from 41% to 78%
-- Task completion rates increased by 34%
-- Users report feeling "in control" of their task list for the first time
-
-## The Unexpected Side Effect
-
-The most surprising outcome? Users started adding better tasks to their backlog in the first place. Knowing they'd see these tasks in the games later, they naturally began writing clearer, better-scoped tasks from the start.
-
-## What's Next
-
-We're exploring new game modes:
-- **The Batch Game**: Group similar tasks for efficient execution
-- **The Energy Game**: Match tasks to your energy levels throughout the day
-- **The Context Game**: Organize tasks by location or required tools
+Since I know I'll meet every task again in the games, I've started writing clearer, better-scoped tasks in the first place. I didn't plan for that, but I'll take it.
 
 ## Try It Yourself
 
-The gamification features are available in the free tier of RightNow Tasks. No premium subscription required—we believe good backlog hygiene should be accessible to everyone.
-
-[Download RightNow Tasks](/rightnow/) and turn your chaotic task list into a well-oiled productivity machine. Who knew grooming could be this much fun?
+The games are in the free tier — no subscription required. [Give RightNow a go](https://rtnw.app) and see what state your backlog is really in.
