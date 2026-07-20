@@ -4,71 +4,75 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This is an **issue tracking repository** for the RightNow productivity app - NOT a source code repository. It exists solely for community interaction, bug reports, and feature requests.
+This is the **public web home of RightNow** — a capacity-first productivity app. It serves three jobs:
 
-## Key Information
+1. **Marketing/landing site + blog** — a Jekyll site published via GitHub Pages at **https://blog.rtnw.app** (see `CNAME`)
+2. **Legal/support pages** — privacy policy, terms of service, account deletion instructions
+3. **Community issue tracking** — bug reports, feature requests, and questions via GitHub issue templates
 
-- **No source code**: This repository contains only issue templates and documentation
-- **Application**: RightNow is a capacity-first productivity app
-  - Web app: https://rtnw.app
-  - Android app: Currently in closed testing
-  - iOS app: Coming soon
-- **Private development**: All actual development happens in a separate private repository
+- **The app itself**: https://rtnw.app (web, live) · Android (in testing) · iOS (planned)
+- **Private development**: all app development happens in a separate private repository
 
 ## Repository Structure
 
 ```
 rtnwapp/
-├── README.md                    # Main repository documentation
-├── .gitignore                   # Git ignore file
-├── CLAUDE.md                    # This file
-├── index.html                   # GitHub Pages landing page
-├── style.css                    # CSS styling for the website
-├── _config.yml                  # GitHub Pages configuration
+├── index.html                   # Landing page (hero + live app-preview mockup)
+├── blog.html                    # Blog index (lists _posts)
+├── style.css                    # Single site-wide stylesheet
+├── _config.yml                  # Jekyll config (permalink /blog/:title/, feed at /rss.xml)
+├── _layouts/                    # default.html, post.html
+├── _posts/                      # Blog posts (YYYY-MM-DD-slug.md, front matter: layout/title/date)
+├── privacy-policy.html          # Legal pages, linked from the app
+├── terms-of-service.html
+├── delete-account.html
+├── CNAME                        # blog.rtnw.app
+├── FEATURES.md                  # Honest feature list — best single source of truth for app claims
+├── DECISIONS.md                 # Architecture/decision log for the site
+├── sync-crossposts.js           # Crossposting helper (posts with crosspost: true)
+├── info/                        # Old copies, excluded from the Jekyll build — not user-visible
 └── .github/
-    └── ISSUE_TEMPLATE/
-        ├── bug_report.md        # Bug report template
-        ├── feature_request.md   # Feature request template
-        ├── question.md          # Question template
-        └── config.yml          # GitHub issue configuration
+    ├── ISSUE_TEMPLATE/          # bug_report, feature_request, question, blog-post
+    └── workflows/publish-post.yml  # Publish-from-issue pipeline (see below)
 ```
+
+## Publishing a blog post from a phone
+
+Alex can post without a computer:
+
+1. Open a new issue using the **📝 Blog post** template (GitHub mobile app works well)
+2. Issue title = post title; issue body = post body in Markdown
+3. Leave it unlabeled to keep drafting; add the **`publish`** label when ready
+4. `publish-post.yml` writes `_posts/<date>-<slug>.md`, commits, comments the live URL, and closes the issue
+5. To fix a typo after publishing: edit the issue and re-add the `publish` label — same URL, same date
 
 ## Common Tasks
 
-Since this is an issue-only repository with a GitHub Pages site, common tasks involve:
-- Updating issue templates
-- Modifying the README for clarity
-- Adjusting issue configuration settings
-- Updating the landing page (index.html) content
-- Modifying website styling (style.css)
+- Writing/editing blog posts in `_posts/` (front matter: `layout: post`, quoted `title`, `date: YYYY-MM-DD HH:MM:SS +0000`)
+- Updating the landing page — keep the `.glass.preview` mockup faithful to the shipped app's Today screen
+- Updating issue templates, legal pages, `FEATURES.md`
 
 ## Important Notes
 
-- Security issues should be reported using GitHub's private vulnerability reporting, not as public issues
-- The repository uses GitHub issue templates that automatically appear when users create new issues
-- Response time expectations are documented in the README
-- GitHub Pages site will be available at https://[username].github.io/rtnwapp/ once enabled
-- Remember to update the GitHub username in index.html links and _config.yml
+- **Never invent facts for content.** No fabricated statistics, user counts, testimonials, ratings, or feature claims. If a number can't be verified, don't publish it. (A 2026-07 sweep removed a batch of AI-generated fabrications — don't reintroduce the disease.)
+- Feature claims should match `FEATURES.md` and the shipped app. Current truths: dark theme only, web live at rtnw.app, Android in testing, iOS planned, **no** desktop apps.
+- Use "refinement" / "cleanup" for the backlog games in user-facing copy — not "grooming".
+- Security issues go through GitHub's private vulnerability reporting, not public issues.
 
 ## Design Philosophy
 
 ### Website Design
-The website follows a clean, minimalist design approach that reflects RightNow's core philosophy of "doing less to achieve more":
-- **Green color scheme**: Represents growth, productivity, and a fresh approach to task management
-- **Soft, rounded edges**: Creates a friendly, approachable feel that reduces stress
-- **Light background with subtle green accents**: Maintains visual clarity and reduces cognitive load
-- **Clear visual hierarchy**: Important actions are prominent, secondary information is subdued
+The site mirrors the app's brand: **dark, glassy, calm**.
+
+- Background `#0E120E` (green-tinted near-black) with soft green/orange radial glows
+- Brand colours: green `#66BB6A`, orange `#FFB74D`/`#FF8F00` — the capacity bar fills green → orange
+- Translucent "glass" cards (`.glass`): subtle fill, 1px border, blur, rounded corners
+- The landing page's app-preview card is a faithful miniature of the real Today screen (priority-coloured squircle checkboxes, green-bordered active task, pill capacity bar, add-a-task pill)
 
 ### Blog Design
-The blog is intentionally designed for continuous, uninterrupted reading:
-- **No individual post pages**: All content is on one page to encourage flow and reduce clicks
-- **Infinite scroll**: Seamlessly load more posts as you read, maintaining engagement
-- **Minimal metadata**: Only timestamps shown, keeping focus on the content
-- **Chronological order**: Latest updates at the top for returning visitors
-- **Simple JSON storage**: Easy to update by adding new entries to blog-posts.json
-- **Responsive cards**: Each post is contained in a soft-bordered card for visual separation
-
-This design philosophy extends the RightNow ethos - just as the app helps you focus on what matters without overwhelming complexity, the website and blog provide information without unnecessary navigation or distractions.
+- Jekyll posts with individual pages at `/blog/<slug>/`, listed on `blog.html`
+- Minimal metadata, chronological, content first
+- RSS feed at `/rss.xml`
 
 ## Writing Style and Voice
 
@@ -96,6 +100,7 @@ When writing blog posts or content as Alex, maintain these characteristics:
 - Focuses on personal learning and growth
 - Acknowledges the community and asks for patience
 - Balances technical topics with personal perspective
+- Speaks as "I", not "we" — there is no team
 
 **Key Phrases and Style:**
 - "I am Alex" (not "I'm Alex" in introductions)
@@ -109,5 +114,11 @@ When writing blog posts or content as Alex, maintain these characteristics:
 - British expressions: "having a go", "full-time" (hyphenated), "at the end of the day"
 - Understated enthusiasm typical of British communication style
 - Polite self-deprecation and asking for patience
+
+**What to avoid (AI-isms):**
+- Hype vocabulary: "revolutionary", "cutting-edge", "game-changer", "seamlessly", "blazing-fast", "unleash"
+- Formulaic constructions: "It's not just X, it's Y", "Let's dive in!", "The best part?", staccato marketing triplets
+- Breathless exclamation marks and grand closes ("Here's to the next chapter! 🚀")
+- Any statistic, quote, or claim that isn't verifiably true
 
 Remember: Alex writes like someone talking to a friend about their passion project - genuine, slightly nerdy, and refreshingly honest, with a distinctly British voice.

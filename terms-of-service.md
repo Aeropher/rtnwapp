@@ -1,13 +1,6 @@
 # Terms of Service for RightNow
 
-**Effective Date**: [DATE_TO_FILL]
-
-> **Note for Alex**: This is a starting-point draft based on common patterns for indie SaaS productivity apps. **Have a lawyer review before publishing**, especially:
-> - The "Governing Law" jurisdiction (placeholder below)
-> - Any subscription/payment terms once Stripe + IAP are wired
-> - The contact / support email
-> - Limitation of liability language (varies by jurisdiction; some places cap how far you can disclaim)
-> - Specific store-required clauses (Apple's Standard EULA terms, Google Play developer agreement)
+**Effective Date**: 20 July 2026
 
 ---
 
@@ -157,14 +150,14 @@ We may update these Terms from time to time. If we make material changes, we wil
 
 ## 15. Governing Law and Disputes
 
-These Terms are governed by the laws of **[JURISDICTION_TO_FILL]**, without regard to conflict-of-laws principles. Any dispute arising out of or relating to these Terms or the App will be resolved in the courts located in **[JURISDICTION_TO_FILL]**, unless applicable law gives you a non-waivable right to bring proceedings elsewhere.
+These Terms are governed by the laws of **England and Wales**, without regard to conflict-of-laws principles. Any dispute arising out of or relating to these Terms or the App will be resolved in the courts of **England and Wales**, unless applicable law gives you a non-waivable right to bring proceedings elsewhere.
 
 If any part of these Terms is found unenforceable, the remaining parts continue in effect.
 
 ## 16. Contact
 
-Questions about these Terms? Contact us at **[SUPPORT_EMAIL_TO_FILL]**.
+Questions about these Terms? Contact us at **aeropherhq@gmail.com**.
 
 ---
 
-*Last updated: [DATE_TO_FILL]*
+*Last updated: 20 July 2026*

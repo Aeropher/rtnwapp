@@ -56,8 +56,10 @@ RightNow content had leaked across three places, duplicated and drifting:
   `permalink`) so existing inbound links keep working; posts live at `/blog/<slug>/`.
 - `_posts/*.md` → all 15 diary posts migrated from `blog-posts.json` (titles/slugs
   assigned, redundant title paragraphs stripped).
-- `terms-of-service.html` → new, styled to match `privacy-policy.html`, placeholders
-  (`[DATE_TO_FILL]`, `[JURISDICTION_TO_FILL]`, `[SUPPORT_EMAIL_TO_FILL]`) left intact.
+- `terms-of-service.html` → new, styled to match `privacy-policy.html`. All
+  placeholders filled 2026-07-20: effective date 20 July 2026, jurisdiction
+  England and Wales, support email aeropherhq@gmail.com (Alex opted out of a
+  lawyer pass).
 - Removed: `blog-posts.json`, `generate-rss.js`, `rss.xml` (superseded by Jekyll).
 
 ## Still to do
