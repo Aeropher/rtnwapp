@@ -43,41 +43,28 @@ RightNow content had leaked across three places, duplicated and drifting:
    the Flutter app's `LegalUrls` will point at `blog.rtnw.app/...` — removing the app's
    dependency on the personal site.
 
-## Implemented in this repo (uncommitted at time of writing)
+## Outcome (as of 2026-07-23 — everything below is live)
 
-- `CNAME` → `blog.rtnw.app`
-- `_config.yml` → `url: https://blog.rtnw.app`, `baseurl: ""`, Jekyll plugins
-  (`jekyll-feed`, `jekyll-seo-tag`, `jekyll-sitemap`), `permalink: /blog/:title/`,
-  feed served at `rss.xml`.
-- `Gemfile` → mirrors the GitHub Pages build for local previews
-  (`bundle install` then `bundle exec jekyll serve`).
-- `_layouts/default.html`, `_layouts/post.html` → shared chrome + single-post template.
-- `blog.html` → rewritten as a Jekyll post list, pinned to `/blog.html` (explicit
-  `permalink`) so existing inbound links keep working; posts live at `/blog/<slug>/`.
-- `_posts/*.md` → all 15 diary posts migrated from `blog-posts.json` (titles/slugs
-  assigned, redundant title paragraphs stripped).
-- `terms-of-service.html` → new, styled to match `privacy-policy.html`. All
-  placeholders filled 2026-07-20: effective date 20 July 2026, jurisdiction
-  England and Wales, support email aeropherhq@gmail.com (Alex opted out of a
-  lawyer pass).
-- Removed: `blog-posts.json`, `generate-rss.js`, `rss.xml` (superseded by Jekyll).
+All four decisions are implemented, committed, and verified:
 
-## Still to do
+- **`blog.rtnw.app` is live** on GitHub Pages with the custom domain + HTTPS (Hover
+  CNAME in place). The Jekyll unification shipped: every post has a real permalink at
+  `/blog/<slug>/`, `blog.html` remains a pinned post index, and the Atom feed serves
+  at `/rss.xml`. The old `blog-posts.json` renderer is gone.
+- **Legal pages are canonical here**: `privacy-policy.html` + `terms-of-service.html`
+  (ToS finalized 2026-07-20 — effective date 20 July 2026, England and Wales,
+  aeropherhq@gmail.com; Alex opted out of a lawyer pass). The Flutter app's
+  `LegalUrls` and its 5 general blog links point at `blog.rtnw.app` — the personal
+  site is no longer load-bearing for the shipping app.
+- **Syndication works as designed**: `sync-crossposts.js` copies opted-in posts
+  (`crosspost: true` front matter) to `aeropher.github.io` with `rel=canonical`
+  pointing back here; the 11 migrated RightNow articles are cross-posted and verified.
+  The personal blog's `rightnow-*` pages are removed.
+- **IA resolved**: the marketing landing is the site root; the old Issues & Feedback
+  hub is a footer "Issues" link.
 
-- [ ] **DNS (Hover):** add `CNAME` record `blog` → `aeropher.github.io` on `rtnw.app`.
-- [ ] **Commit + push** this repo; confirm GitHub Pages picks up the custom domain and
-      enable "Enforce HTTPS".
-- [ ] **Fill ToS placeholders** (date, jurisdiction, support email) + lawyer review.
-- [x] **Repoint the app** (`rightnow` repo) — DONE in the working tree, pending commit +
-      next app release: `lib/utils/legal_urls.dart` now points at
-      `https://blog.rtnw.app/privacy-policy.html` and `.../terms-of-service.html`. Also
-      repointed the 5 general blog links (`aeropher_messages_linkable.dart`,
-      `help_info_settings_section.dart`, `beta_notice_card.dart`) from the old
-      `aeropher.github.io/rtnwapp/` to `https://blog.rtnw.app/blog.html`.
-- [ ] **Clean the personal blog** (`aeropher.github.io`): remove the 11 RightNow posts,
-      the 3 `rightnow-*` pages, and loose product `.md` files — *after* the app no longer
-      links to the personal-site privacy page.
-- [ ] **Cross-post mechanism:** script to copy rtnw `_posts` into the personal blog with
-      a canonical link injected (and a "RightNow" category/tag).
-- [ ] **Open IA question:** at `blog.rtnw.app` the root (`index.html`) is still the
-      Issues & Feedback hub, not the blog. Decide whether the blog should be the landing.
+### Remaining scrap
+
+- [ ] `aeropher.github.io` still carries one loose product file,
+      `rightnow_feature_backlog.md` — delete it (it predates the split and its
+      contents belong to the app repo's docs).
