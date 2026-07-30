@@ -23,11 +23,11 @@ That's it. It's free, there are no ads, and you don't even need to create an acc
 
 ## iPhone users
 
-There's no iOS build yet. Android is first because that's where the launch requirement is. iOS is planned to follow. If you'd like to test on iPhone when a TestFlight build exists, email me at the same address and I'll keep a list.
+There's no iOS build yet. Android came first simply because it's the platform I knew how to build and ship. iOS is planned to follow, and since writing this post the first iOS builds are working: I've written up how in [Building RightNow for iOS With a Mac Mini in the Corner](/blog/ios-builds-and-local-ci/). If you'd like to test on iPhone when a TestFlight build exists, email me at the same address and I'll keep a list.
 
-## Being honest about what's left
+## What's left
 
-I want to be transparent about where the app actually is. It's in good shape: the current build is stable, the test suite is over 7,600 tests, and the last few weeks fixed a long tail of bugs. But "launchable" and "finished" aren't the same thing. Here's a sample of what's still open on my ship checklist:
+It's in good shape: the current build is stable, the test suite is over 7,600 tests, and the last few weeks fixed a long tail of bugs. But "launchable" and "finished" aren't the same thing. Here's a sample of what's still open on my ship checklist:
 
 - **Terms of service**: drafted, but the placeholders (jurisdiction, effective date) need filling and it needs a proper legal review.
 - **Accessibility**: the code has screen-reader labels throughout, but I still need to verify the full experience with VoiceOver and TalkBack on real devices, and check nothing breaks at 200% text size.
