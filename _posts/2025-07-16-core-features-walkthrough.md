@@ -7,7 +7,7 @@ categories: features
 tags: [features, walkthrough, productivity, user-guide]
 ---
 
-A proper tour of what's in RightNow and why each piece exists — the philosophy as much as the functionality.
+A proper tour of what's in RightNow and why each piece exists: the philosophy as much as the functionality.
 
 ## 🎯 The Capacity System
 
@@ -64,7 +64,7 @@ The kind of thing this surfaces (speaking from experience): the emails you think
 
 ## 🎮 Refinement Games: Making Planning Fun
 
-The most unusual feature in RightNow — backlog upkeep as quick games rather than a chore.
+The most unusual feature in RightNow: backlog upkeep as quick games rather than a chore.
 
 ### This or That
 
@@ -72,7 +72,7 @@ Two tasks, head to head: which would you rather get done? A few rounds of honest
 
 ### The Duration Game
 
-One task at a time, one question: how long will this really take? Tap an estimate or split the task in two if it's clearly more than one sitting. Tasks still wearing the default estimate come up first — those are the ones nobody ever thought about.
+One task at a time, one question: how long will this really take? Tap an estimate or split the task in two if it's clearly more than one sitting. Tasks still wearing the default estimate come up first. Those are the ones nobody ever thought about.
 
 ### Make It Doable
 
@@ -299,13 +299,13 @@ Make RightNow work for your unique workflow.
 
 ### Interface Preferences
 
-- **Theme**: one focused dark look (deliberately — no theme rabbit holes)
+- **Theme**: one focused dark look (deliberately, no theme rabbit holes)
 - **Notifications**: configurable reminders
 - **Time format**: 12h or 24h display
 
 ## 🔮 Ideas I'm Chewing On
 
-No promises or dates — just directions I keep coming back to:
+No promises or dates, just directions I keep coming back to:
 
 - Deeper calendar integration
 - Smarter estimation help based on your history
@@ -324,7 +324,7 @@ It comes together like this:
 6. **Focus mode** supports deep work
 
 📱 **Try RightNow:**
-- [rtnw.app](https://rtnw.app) — free on the web, no account needed to start
+- [rtnw.app](https://rtnw.app): free on the web, no account needed to start
 - [Privacy Policy](/privacy-policy.html)
 - [Delete Account](/delete-account.html)
 

@@ -244,7 +244,7 @@ This blog post was easier because I kept notes.
 
 ## What's Next?
 
-Technically speaking, the areas I keep poking at — no promises:
+Technically speaking, the areas I keep poking at, no promises:
 
 - Making sync more robust (it's the hardest part of the codebase, and probably always will be)
 - Smarter estimation help based on your own history

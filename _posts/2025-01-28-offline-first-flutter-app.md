@@ -63,7 +63,7 @@ class Task extends HiveObject {
 }
 ```
 
-The `@HiveField` numbers are crucial—they must never change once deployed, or you'll corrupt existing user data.
+The `@HiveField` numbers are crucial: they must never change once deployed, or you'll corrupt existing user data.
 
 ## The Sync Engine
 
@@ -260,10 +260,10 @@ class SyncStatusWidget extends StatelessWidget {
 ## The Result
 
 What the offline-first approach buys:
-- **Instant UI responses** — nothing user-facing waits on a network call
-- **The app works without internet** — sync catches up when the connection returns
-- **Conflict resolution** — concurrent edits get handled rather than lost
+- **Instant UI responses**: nothing user-facing waits on a network call
+- **The app works without internet**: sync catches up when the connection returns
+- **Conflict resolution**: concurrent edits get handled rather than lost
 
 ## Worth It?
 
-Building offline-first is definitely more work upfront, and the sync logic has been the source of my hardest bugs. But the result is an app you can depend on whether you're online, offline, or somewhere in between — and for a task app, that's the whole point.
+Building offline-first is definitely more work upfront, and the sync logic has been the source of my hardest bugs. But the result is an app you can depend on whether you're online, offline, or somewhere in between, and for a task app, that's the whole point.

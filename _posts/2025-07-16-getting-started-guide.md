@@ -7,7 +7,7 @@ categories: guides
 tags: [tutorial, getting-started, workflow]
 ---
 
-This guide walks you through your first day with RightNow — enough to get a working setup without reading a manual.
+This guide walks you through your first day with RightNow: enough to get a working setup without reading a manual.
 
 ## First Launch: Setting Your Daily Capacity
 
@@ -67,7 +67,7 @@ Your complete task backlog:
 - Good for a weekly planning session
 
 ### 📅 Calendar
-Your tasks laid out across days — handy for spotting overloaded ones before they happen.
+Your tasks laid out across days, handy for spotting overloaded ones before they happen.
 
 ### ⚙️ Settings
 - Adjust daily capacity and work-day hours
@@ -96,9 +96,9 @@ graph TD
 ```
 
 ### During the Day
-- **Mark the task you're working on** — it goes green and sits at the top
+- **Mark the task you're working on**: it goes green and sits at the top
 - **Tick tasks off** as you finish them
-- **Reschedule** if plans change — no guilt, just honesty
+- **Reschedule** if plans change. No guilt, just honesty
 
 ### End of Day Review (3 minutes)
 1. Complete or reschedule remaining tasks
@@ -172,10 +172,10 @@ Try this progression over your first week:
 
 Now that you're up and running:
 
-1. **Make the refinement games a ritual** — Friday afternoons work well
-2. **Check analytics** — learn from your patterns
-3. **Customize settings** — make it yours
-4. **Send feedback from inside the app** — I read all of it
+1. **Make the refinement games a ritual**: Friday afternoons work well
+2. **Check analytics**: learn from your patterns
+3. **Customize settings**: make it yours
+4. **Send feedback from inside the app**: I read all of it
 
 📱 **Get Started:**
 - [Try RightNow on the web](https://rtnw.app)

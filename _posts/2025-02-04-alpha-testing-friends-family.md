@@ -10,7 +10,7 @@ featured: false
 
 Last week, I did something terrifying. I sent a link to my half-baked, barely-functional app to my friends and family. "Hey, want to try RightNow?" I typed, my finger hovering over the send button for a solid minute.
 
-The app wasn't ready. Hell, it's still not ready. But my Android-only beta was excluding half the people I wanted feedback from—the iPhone users. So I deployed a web version, held my breath, and hit send.
+The app wasn't ready. Hell, it's still not ready. But my Android-only beta was excluding half the people I wanted feedback from: the iPhone users. So I deployed a web version, held my breath, and hit send.
 
 ## The Web App Compromise
 
@@ -43,7 +43,7 @@ That "but" hits different when it's from your sister.
 
 ## Learning Not to Take It Personally (Spoiler: I Failed)
 
-Here's the thing about feedback from friends and family—it's unfiltered. They're not worried about hurting your feelings because they assume you want honesty. And you do. In theory.
+Here's the thing about feedback from friends and family: it's unfiltered. They're not worried about hurting your feelings because they assume you want honesty. And you do. In theory.
 
 In practice, every piece of criticism felt like a personal attack. This wasn't just an app; it was my baby. I'd spent months crafting every interaction, and here was my best friend telling me the onboarding "made no sense."
 
@@ -105,15 +105,15 @@ If you're thinking about sharing your work-in-progress:
 ### Don't:
 - Defend your decisions in the moment
 - Take feedback as personal criticism (easier said than done)
-- Wait for perfection—you'll never ship
+- Wait for perfection: you'll never ship
 - Forget to follow up with updates
 
 ## The Reality Check
 
 Here's the truth: Your friends and family are not your target market. They're using your app as a favor to you, not because they need it. But that's exactly why their feedback is valuable. If they can't figure it out, neither will strangers who have no reason to persist.
 
-RightNow Tasks is inherently niche. It's for a specific type of person—someone who:
-- Gets genuinely excited about productivity systems
+RightNow Tasks is inherently niche. It's for a specific type of person, someone who:
+- Gets excited about productivity systems
 - Has tried multiple task apps and found them lacking
 - Actually enjoys the process of planning their day
 - Feels physical discomfort from over-committed todo lists
@@ -128,13 +128,13 @@ Here's something they don't tell you about building an app on a shoestring budge
 
 This month, I hit a wall. GitHub Actions minutes? Gone. Exceeded the free tier limit from all those automated builds and deployments. Firebase informed me that I can't upload executables on the Spark (free) plan. Suddenly, my "free" side project needs a credit card.
 
-The irony isn't lost on me—I'm building a productivity app to help people work within their capacity, while I'm struggling to work within the capacity of free tiers:
+The irony isn't lost on me: I'm building a productivity app to help people work within their capacity, while I'm struggling to work within the capacity of free tiers:
 
 - **GitHub Actions**: 2,000 minutes/month sounds like a lot until you realize each build takes 10-15 minutes
 - **Firebase Hosting**: Great for web, but want to distribute APKs? That'll require an upgrade
 - **Vercel/Netlify**: Generous, until you need those advanced features
 
-So now I'm doing builds locally, manually uploading to Firebase, and wondering if this is sustainable. It's like being a chef who can't afford ingredients—technically possible, but exhausting.
+So now I'm doing builds locally, manually uploading to Firebase, and wondering if this is sustainable. It's like being a chef who can't afford ingredients: technically possible, but exhausting.
 
 ## Moving Forward
 

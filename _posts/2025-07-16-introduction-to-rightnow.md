@@ -81,13 +81,13 @@ The difference comes down to a few things:
 ## Under the Hood
 
 - **Flutter**, so the same app runs on web and mobile
-- **Offline-first** architecture — it works without a connection
+- **Offline-first** architecture: it works without a connection
 - **Cloud sync** for access across devices
 - **Material Design 3** for the UI
 
 ## Get Started
 
-- 🌐 Web: [rtnw.app](https://rtnw.app) — free, no account needed to start
+- 🌐 Web: [rtnw.app](https://rtnw.app), free, no account needed to start
 - 📱 Android: in testing
 - 🍎 iOS: planned
 

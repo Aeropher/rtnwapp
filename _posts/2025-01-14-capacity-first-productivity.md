@@ -20,7 +20,7 @@ It comes down to three steps:
 
 ### 1. Set Your Daily Capacity
 
-Each morning, you reflect on your available time and energy. Had a busy morning with meetings? Maybe you have 4 focused hours. Clear schedule and feeling great? Perhaps 8 hours. There's no judgment—just honest assessment.
+Each morning, you reflect on your available time and energy. Had a busy morning with meetings? Maybe you have 4 focused hours. Clear schedule and feeling great? Perhaps 8 hours. There's no judgment, just honest assessment.
 
 ### 2. Visual Progress Tracking
 
@@ -65,4 +65,4 @@ Capacity-first planning works especially well if you:
 
 ## Try It Yourself
 
-If that sounds like your kind of thing, [RightNow is free to try on the web](https://rtnw.app) — no account needed to start.
+If that sounds like your kind of thing, [RightNow is free to try on the web](https://rtnw.app), no account needed to start.

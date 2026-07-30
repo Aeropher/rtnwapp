@@ -8,7 +8,7 @@ tags: [gamification, ux-design, flutter, mobile-development]
 featured: false
 ---
 
-Tidying up your task backlog is about as exciting as cleaning the garage. It's necessary, but nobody actually wants to do it. That's why most backlogs become digital junkyards — full of outdated tasks, vague ideas, and that "learn Spanish" task from 2019.
+Tidying up your task backlog is about as exciting as cleaning the garage. It's necessary, but nobody actually wants to do it. That's why most backlogs become digital junkyards, full of outdated tasks, vague ideas, and that "learn Spanish" task from 2019.
 
 So I asked myself: what if sorting out your backlog could actually be... fun?
 
@@ -32,13 +32,13 @@ void updatePriorities(Task winner, Task loser) {
 }
 ```
 
-After 20-30 comparisons, your entire backlog is sorted by what actually matters to you—not what you thought mattered when you created the task.
+After 20-30 comparisons, your entire backlog is sorted by what actually matters to you, not what you thought mattered when you created the task.
 
 ### 2. The Duration Game: "Beat the Clock"
 
 A task appears with its estimated duration. You have 5 seconds to decide: is this estimate still accurate? Swipe right for yes, left for no. If no, quickly tap a new duration from our preset options (15m, 30m, 1h).
 
-The time pressure is the point — it prevents overthinking. My gut-reaction estimates have turned out more honest than my carefully considered ones.
+The time pressure is the point: it prevents overthinking. My gut-reaction estimates have turned out more honest than my carefully considered ones.
 
 ### 3. The Clarity Game: "Crystal Clear or Fuzzy?"
 
@@ -52,7 +52,7 @@ Playing this on my own backlog was humbling: a surprising share of my tasks were
 Each swipe gives instant visual and haptic feedback. Small, satisfying, keeps you going.
 
 ### Bounded Time Investment
-Each game has a clear end point — a couple of minutes. Easy to fit into a small break, and it never turns into a chore session.
+Each game has a clear end point: a couple of minutes. Easy to fit into a small break, and it never turns into a chore session.
 
 ### Progress Visualization
 You can watch your backlog health improve as you play, which is more motivating than I expected.
@@ -87,4 +87,4 @@ Since I know I'll meet every task again in the games, I've started writing clear
 
 ## Try It Yourself
 
-The games are in the free tier — no subscription required. [Give RightNow a go](https://rtnw.app) and see what state your backlog is really in.
+The games are in the free tier, no subscription required. [Give RightNow a go](https://rtnw.app) and see what state your backlog is really in.
