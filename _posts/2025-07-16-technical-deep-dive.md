@@ -7,7 +7,7 @@ categories: technical
 tags: [development, flutter, architecture, open-source]
 ---
 
-As an indie developer building RightNow in public, I want to share the technical journey and decisions behind the app. This isn't about showing off code - it's about sharing what I've learned and helping others who might be on a similar path.
+As an indie developer building RightNow in public, I want to share the technical decisions behind the app and what I've learned from them.
 
 ## The Numbers: A Growing Codebase
 
@@ -133,7 +133,7 @@ The gamification feature went through this exact process:
 5. **Tests**: Swipe gesture handling
 6. **UI**: Custom game widgets
 7. **Provider**: Game state management
-8. **Testing**: Friends loved it!
+8. **Testing**: Friends and family tried it and sent feedback
 9. **Shipped**: In 3 days
 
 ## Performance Optimizations

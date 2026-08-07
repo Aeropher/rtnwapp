@@ -12,7 +12,7 @@ Most task apps let you pile up more work than a day can hold. RightNow takes a d
 
 ## What is Capacity-First Planning?
 
-Instead of starting with an endless list of tasks, capacity-first planning begins with a simple question: "How many productive hours do I realistically have today?" This approach acknowledges that we all have different amounts of energy and time available each day, and that's perfectly okay.
+Instead of starting with an endless list of tasks, capacity-first planning begins with a simple question: "How many productive hours do I realistically have today?" Everyone has different amounts of energy and time available each day, and the plan should start from that.
 
 ## How Capacity-First Planning Works
 
@@ -50,9 +50,9 @@ bool canAddTask(Task task, double dailyCapacity) {
 
 The key is making the constraint feel helpful rather than nagging. When the bar fills up, what you're looking at is a realistic day taking shape.
 
-## Learning and Growing
+## A Side Effect: Better Estimates
 
-One unexpected benefit of capacity-first planning is how it naturally improves your estimation skills. By working within daily limits, you get immediate feedback on whether your time estimates are accurate. Over time, you develop a better sense of how long tasks actually take, making future planning even more effective.
+One unexpected benefit of capacity-first planning is how it improves your estimation skills. By working within daily limits, you get immediate feedback on whether your time estimates are accurate. Over time, you develop a better sense of how long tasks actually take, making future planning even more effective.
 
 ## Is This Approach Right for You?
 

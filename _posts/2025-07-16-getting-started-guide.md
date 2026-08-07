@@ -25,9 +25,9 @@ graph LR
 
 1. **Tap the capacity bar** at the top of the screen
 2. **Enter your available hours** (we recommend starting with 6 hours)
-3. **Hit save** - you're ready to go!
+3. **Hit save** - you're ready to go
 
-💡 **Pro Tip**: Be realistic! If you have 8 hours at work, you probably have 5-6 hours of actual productive time after meetings, breaks, and interruptions.
+Be realistic here: if you have 8 hours at work, you probably have 5-6 hours of actual productive time after meetings, breaks, and interruptions.
 
 ## Creating Your First Tasks
 
@@ -36,7 +36,7 @@ Now add some tasks:
 1. **Tap the task creation bar** at the bottom
 2. **Type your task** (e.g., "Review project proposal")
 3. **Set a duration** using the quick buttons (15m, 30m, 45m, 1h)
-4. **Hit enter** - your task is created!
+4. **Hit enter** - your task is created
 
 ```mermaid
 graph TD
@@ -83,7 +83,7 @@ Here's a simple workflow to get you started:
 2. Review what's already scheduled for today
 3. Check your capacity bar
 4. Add 2-3 important tasks from All Tasks
-5. Start your first task!
+5. Start your first task
 
 ```mermaid
 graph TD
