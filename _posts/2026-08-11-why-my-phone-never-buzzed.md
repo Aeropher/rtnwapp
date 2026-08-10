@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why My Phone Never Buzzed"
-date: 2026-08-10 18:00:00 +0000
+date: 2026-08-11 10:00:00 +0000
 ---
 
 RightNow can remind you when a task is due. It puts a notification on your phone at the time you picked. On iPhone this has worked for a while. On my own Android phone, a Samsung, it had never worked once.
@@ -25,8 +25,6 @@ Fixing the freezer got me a reminder that fired but still no notification.
 The reminder was being handed to a part of the app that was never switched on. To receive a scheduled alarm, an Android app has to register a specific component in its settings file. The notification library I use ships without registering it, on the assumption that each app will do so. I never had. So for the entire life of the Android app, every reminder that ever fired had nothing listening for it, and vanished. This was the real reason it had never worked, and it was one line of configuration.
 
 ## Gotchas three, four and five
-
-With the door in place, three smaller ones were still in the way.
 
 The release build was compressing the app in a way that scrambled the notification library's internals, so even a reminder that made it through would have arrived garbled. The toggle for task reminders defaulted to off, so a brand new user got nothing until they went looking for a setting. And reminders on tasks created from my other tools, rather than in the app itself, were never being scheduled at all. That last one I have just not finished yet.
 
