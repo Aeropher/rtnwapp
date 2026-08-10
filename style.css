@@ -207,3 +207,37 @@ footer a:hover { color: var(--green); }
   .strip { grid-template-columns: 1fr; }
   nav .links a:not(.btn) { display: none; }
 }
+
+/* Newsletter signup (blog posts) */
+.newsletter-signup {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.newsletter-signup h3 { margin: 0 0 0.5rem; color: var(--text); font-size: 1.1rem; }
+.newsletter-signup p { margin: 0 0 1rem; color: var(--text-dim); font-size: 0.95rem; }
+.newsletter-signup form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.newsletter-signup input[type="email"] {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.6rem 0.9rem;
+  background: var(--surface-hi);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font: inherit;
+}
+.newsletter-signup input[type="email"]:focus { outline: 2px solid var(--green); border-color: transparent; }
+.newsletter-signup button {
+  padding: 0.6rem 1.2rem;
+  background: var(--green);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.newsletter-signup button:hover { background: var(--green-l); }
