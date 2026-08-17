@@ -2,7 +2,7 @@
 
 ## Overview
 
-RightNow is a capacity-first productivity app that helps you manage your time and tasks based on your actual available capacity, not just endless to-do lists.
+RightNow is a time-blocking app with a place to park everything else. You plan each day around the hours you actually have, and the app tells you when the day is full instead of letting the list grow forever.
 
 ## Core Features
 
@@ -21,7 +21,7 @@ RightNow is a capacity-first productivity app that helps you manage your time an
 - **Rollover Boost**: Yesterday's unfinished tasks float to the top today, then gently decay back to normal priority
 
 ### 🃏 Refinement Games
-- **Backlog Grooming, Gamified**: Quick swipe games to sharpen your backlog — set priorities, check durations, clarify vague tasks, keep-or-delete, and spot duplicates
+- **Task Cleanup, Gamified**: Quick swipe games that give tasks honest sizes so the day adds up — set priorities, check durations, clarify vague tasks, keep-or-delete, and spot duplicates
 - **Achievements & Backlog Health**: Track your streaks and how actionable your backlog is
 
 ### 📅 Today Screen
