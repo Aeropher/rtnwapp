@@ -3,3 +3,5 @@
 
 # Info directory
 info/
+# Jekyll build output
+_site/
