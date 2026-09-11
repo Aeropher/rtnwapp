@@ -294,6 +294,23 @@ footer a:hover { color: var(--green); }
 .tester-signup .fineprint { margin: 1rem 0 0; font-size: 0.8rem; color: var(--text-faint); }
 .tester-signup .fineprint a { color: var(--text-dim); }
 
+/* Honeypot: off-screen rather than display:none, which some bots detect. */
+.tester-signup .hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.tester-signup .signup-error {
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--orange);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
 .plat .join { margin-left: auto; font-size: 0.85rem; color: var(--orange); text-decoration: none; }
 .plat .join:hover { text-decoration: underline; }
 
