@@ -302,6 +302,18 @@ footer a:hover { color: var(--green); }
   height: 1px;
   overflow: hidden;
 }
+.tester-signup .signup-success {
+  margin: 0 0 0.5rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--green);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+.tester-signup button[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
 .tester-signup .signup-error {
   margin: 0 0 1rem;
   padding: 0.7rem 0.9rem;

@@ -1,7 +1,6 @@
-<!-- Android closed-test signup: posts to our own Cloud Function, which emails a
-     confirmation link and only tells Alex once it's clicked. No JavaScript
-     required — the error banner below is the one enhancement, and the form
-     works without it. -->
+<!-- Android closed-test signup. Submits in place via fetch and swaps the form
+     for a confirmation — nothing here navigates the visitor away. Needs
+     JavaScript; the noscript block below gives a way through without it. -->
 <div class="tester-signup" id="join">
   <h3>Put me on the Android test</h3>
   <p class="lead-ask">I need the email address your phone uses for the
@@ -14,8 +13,9 @@
     nowhere — you never get in, and neither of us finds out why.</p>
 
   <p class="signup-error" id="signup-error" hidden></p>
+  <p class="signup-success" id="signup-success" hidden></p>
 
-  <form action="https://rtnw.app/api/tester-signup" method="post">
+  <form action="https://rtnw.app/api/tester-signup" method="post" id="signup-form">
     <div class="field">
       <label for="td-email">Your Google Play email address</label>
       <input type="email" name="email" id="td-email" placeholder="the one in the Play Store app" required />
@@ -29,10 +29,17 @@
       <label for="td-website">Leave this field empty</label>
       <input type="text" name="website" id="td-website" tabindex="-1" autocomplete="off" />
     </div>
-    <button type="submit">Count me in</button>
+    <button type="submit" id="signup-button">Count me in</button>
   </form>
 
-  <p class="fineprint">
+  <noscript>
+    <p class="signup-error">This form needs JavaScript. With it switched off,
+      <a href="mailto:support@rtnw.app?subject=Android%20test">email me</a>
+      the address your phone uses for the Play Store and I'll add you by
+      hand.</p>
+  </noscript>
+
+  <p class="fineprint" id="signup-fineprint">
     You'll get a confirmation email first — click the link in it or your address
     never reaches me. I store it to add you to the closed test and to email you
     about the test, nothing else, and I delete it when the test ends. No
@@ -41,17 +48,49 @@
 </div>
 
 <script>
-  // Renders the message the signup endpoint redirected back with, so a bad
-  // address is explained in place rather than silently bouncing you here.
   (function () {
-    var messages = {
-      'too-many': 'That was a lot of attempts in a short time. Try again in an hour, or just email me.',
-      'email-failed': "Your details are saved, but the confirmation email didn't send. Email me and I'll add you by hand."
-    };
-    var error = new URLSearchParams(window.location.search).get('error');
-    if (!error) return;
-    var box = document.getElementById('signup-error');
-    box.textContent = messages[error] || error;
-    box.hidden = false;
+    var form = document.getElementById('signup-form');
+    var button = document.getElementById('signup-button');
+    var errorBox = document.getElementById('signup-error');
+    var successBox = document.getElementById('signup-success');
+    var fineprint = document.getElementById('signup-fineprint');
+    if (!form || !window.fetch) return;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      errorBox.hidden = true;
+
+      // The confirmation email is sent before we answer, so this genuinely
+      // takes a second or two. Saying nothing reads as a dead button.
+      button.disabled = true;
+      button.textContent = 'Sending…';
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new URLSearchParams(new FormData(form))
+      })
+        .then(function (response) { return response.json(); })
+        .then(function (result) {
+          if (!result.ok) {
+            errorBox.textContent = result.message;
+            errorBox.hidden = false;
+            button.disabled = false;
+            button.textContent = 'Count me in';
+            return;
+          }
+          successBox.textContent = result.message;
+          successBox.hidden = false;
+          form.hidden = true;
+          fineprint.hidden = true;
+        })
+        .catch(function () {
+          errorBox.textContent =
+            "Something went wrong sending that. Check your connection and try again, or email me and I'll add you by hand.";
+          errorBox.hidden = false;
+          button.disabled = false;
+          button.textContent = 'Count me in';
+        });
+    });
   })();
 </script>
