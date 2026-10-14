@@ -18,7 +18,7 @@ write what he said, not an enthusiastic version of it.
 
 **2. Claims match the shipped app.** Check `FEATURES.md` before describing
 anything the app does. Current truths: **dark theme only**, web **live** at
-rtnw.app, Android **in testing**, iOS **planned**, **no** desktop apps. Say
+rtnw.app, Android **in testing**, iOS **live on the App Store**, **no** desktop apps. Say
 "refinement" or "cleanup" for the backlog games — never "grooming".
 
 ## The voice

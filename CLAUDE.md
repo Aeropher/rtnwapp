@@ -10,7 +10,7 @@ This is the **public web home of RightNow** — a capacity-first productivity ap
 2. **Legal/support pages** — privacy policy, terms of service, account deletion instructions
 3. **Community issue tracking** — bug reports, feature requests, and questions via GitHub issue templates
 
-- **The app itself**: https://rtnw.app (web, live) · Android (in testing) · iOS (planned)
+- **The app itself**: https://rtnw.app (web, live) · Android (in testing) · iOS (live on the App Store, id6747011987)
 - **Private development**: all app development happens in a separate private repository
 
 ## Repository Structure
@@ -55,7 +55,7 @@ Alex can post without a computer:
 ## Important Notes
 
 - **Never invent facts for content.** No fabricated statistics, user counts, testimonials, ratings, or feature claims. If a number can't be verified, don't publish it. (A 2026-07 sweep removed a batch of AI-generated fabrications — don't reintroduce the disease.)
-- Feature claims should match `FEATURES.md` and the shipped app. Current truths: dark theme only, web live at rtnw.app, Android in testing, iOS planned, **no** desktop apps.
+- Feature claims should match `FEATURES.md` and the shipped app. Current truths: dark theme only, web live at rtnw.app, Android in testing, iOS live on the App Store, **no** desktop apps.
 - Use "refinement" / "cleanup" for the backlog games in user-facing copy — not "grooming".
 - Security issues go through GitHub's private vulnerability reporting, not public issues.
 

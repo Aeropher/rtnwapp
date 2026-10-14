@@ -32,7 +32,7 @@ RightNow is a time-blocking app with a place to park everything else. You plan e
 ### 📱 Cross-Platform
 - **Web Application**: Full-featured web app at https://rtnw.app
 - **Android App**: In testing
-- **iOS App**: Planned
+- **iOS App**: Live on the App Store (iPhone and iPad): https://apps.apple.com/gb/app/id6747011987
 - **Offline First**: Works without an internet connection; no account needed to start
 
 ### ☁️ Premium: Cloud Sync
@@ -65,6 +65,6 @@ Unlike traditional to-do apps that encourage endless task lists, RightNow helps 
 
 - **Web**: Available now at https://rtnw.app
 - **Android**: In testing
-- **iOS**: Planned
+- **iOS**: Live on the App Store since 13 October 2026 (every region except China mainland)
 
 For feature requests or bug reports, please use our [GitHub Issues](https://github.com/aeropher/rtnwapp/issues).
