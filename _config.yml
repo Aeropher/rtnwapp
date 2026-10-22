@@ -10,6 +10,19 @@ markdown: kramdown
 theme: null  # We're using custom HTML/CSS + our own layouts
 permalink: /blog/:title/
 
+# User guides: one page per thing you can create, change or delete in the app
+collections:
+  docs:
+    output: true
+    permalink: /docs/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: doc
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -33,5 +46,6 @@ exclude:
   - info/
   - sync-crossposts.js
   - DECISIONS.md
+  - VIDEO-PLAN.md
 
 # GitHub Pages will serve index.html by default

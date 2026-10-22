@@ -34,3 +34,4 @@ Apple also lists it for Apple silicon Macs and Vision Pro. That's the iPad versi
 - **Android:** in a closed test on Google Play, which needs twelve people in it before I can release it properly. [Join the test]({{ '/test.html' | relative_url }}).
 
 If you try it on iPhone, I'd like to hear what breaks. You can send feedback from inside the app, or use [GitHub Issues](https://github.com/aeropher/rtnwapp/issues). And a rating on the App Store helps a new app get found, if you're feeling kind :-)
+222

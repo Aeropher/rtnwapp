@@ -1,0 +1,90 @@
+---
+layout: default
+title: Guides
+description: How to create, change and delete everything in RightNow, kept in step with the app.
+permalink: /docs/
+---
+<div class="wrap">
+  <div class="blog-intro">
+    <h1>Guides</h1>
+    <p>How to do things in RightNow: making, changing and deleting each kind of thing in the app.</p>
+  </div>
+
+  <div class="doc-search">
+    <label for="doc-search-input" class="visually-hidden">Search the guides</label>
+    <input id="doc-search-input" type="search" placeholder="Search the guides, e.g. &quot;delete repeating task&quot;" autocomplete="off">
+    <p id="doc-search-status" class="doc-search-status" aria-live="polite"></p>
+  </div>
+
+  <ul id="doc-list" class="doc-list">
+    {% assign guides = site.docs | sort: "order" %}
+    {% for doc in guides %}
+    <li class="glass doc-card" data-url="{{ doc.url | relative_url }}">
+      <a href="{{ doc.url | relative_url }}">
+        <h2>{{ doc.title }}</h2>
+        <p>{{ doc.summary }}</p>
+      </a>
+      <p class="doc-snippet" hidden></p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+(function () {
+  var input = document.getElementById('doc-search-input');
+  var status = document.getElementById('doc-search-status');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.doc-card'));
+  var index = null;
+
+  // Built by Jekyll from the guide pages themselves, so search never drifts
+  // from what the guides say.
+  fetch('{{ "/docs-index.json" | relative_url }}')
+    .then(function (r) { return r.json(); })
+    .then(function (data) { index = data; run(); })
+    .catch(function () { status.textContent = "Search isn't available right now, but every guide is listed below."; });
+
+  function words(q) {
+    return q.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 1; });
+  }
+
+  function snippet(text, ws) {
+    var lower = text.toLowerCase();
+    var at = -1;
+    for (var i = 0; i < ws.length && at < 0; i++) at = lower.indexOf(ws[i]);
+    if (at < 0) return '';
+    var start = Math.max(0, at - 60);
+    return (start > 0 ? '…' : '') + text.slice(start, at + 120).trim() + '…';
+  }
+
+  function run() {
+    var ws = words(input.value);
+    if (!index || ws.length === 0) {
+      cards.forEach(function (c) { c.hidden = false; c.querySelector('.doc-snippet').hidden = true; });
+      status.textContent = '';
+      return;
+    }
+    var shown = 0;
+    cards.forEach(function (card) {
+      var entry = index.find(function (e) { return e.url === card.dataset.url; });
+      if (!entry) { card.hidden = true; return; }
+      var hay = (entry.title + ' ' + entry.summary + ' ' + entry.content).toLowerCase();
+      var match = ws.every(function (w) { return hay.indexOf(w) >= 0; });
+      card.hidden = !match;
+      var snip = card.querySelector('.doc-snippet');
+      if (match) {
+        shown++;
+        snip.textContent = snippet(entry.content, ws);
+        snip.hidden = snip.textContent === '';
+      }
+    });
+    status.textContent = shown === 0
+      ? 'Nothing matches that. Try fewer words, or ask on GitHub Issues.'
+      : shown + (shown === 1 ? ' guide matches.' : ' guides match.');
+  }
+
+  input.addEventListener('input', run);
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { input.value = q; }
+})();
+</script>

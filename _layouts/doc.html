@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="wrap">
+  <article class="prose doc">
+    <a href="{{ '/docs/' | relative_url }}" class="back-link">← All guides</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="doc-summary">{{ page.summary }}</p>{% endif %}
+    {{ content }}
+    <p class="doc-reviewed">
+      {% if page.last_reviewed %}Checked against the app on
+      <time datetime="{{ page.last_reviewed | date_to_xmlschema }}">{{ page.last_reviewed | date: "%-d %B %Y" }}</time>.{% endif %}
+      Something here doesn't match what you see?
+      <a href="https://github.com/aeropher/rtnwapp/issues">Tell me</a> and I'll fix the guide.
+    </p>
+  </article>
+</div>

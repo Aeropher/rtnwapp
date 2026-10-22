@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /docs-index.json
+---
+[
+{%- assign guides = site.docs | sort: "order" -%}
+{%- for doc in guides -%}
+  {
+    "url": {{ doc.url | relative_url | jsonify }},
+    "title": {{ doc.title | jsonify }},
+    "summary": {{ doc.summary | jsonify }},
+    "content": {{ doc.content | strip_html | normalize_whitespace | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+]
