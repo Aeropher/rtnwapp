@@ -31,6 +31,8 @@ After installing an update that adds widgets, open RightNow once before you use 
 
 **Add a task.** One button that opens the add bar.
 
+**Right now, smart.** Changes through the day to show whatever matters most at that moment: a meeting that's on or about to start, how far over you are, your most important task, a short task that fits before your next meeting, a repeating task with a streak to keep, a tidy-up in the last hour of your work day, and what you got done once it's over. A label at the top says which it's showing.
+
 **Next gap.** Your next calendar event, how long until it starts, and the first task on Today that fits in the free time before it. During an event it shows when it ends. With no events left it uses the time until your work day ends. Tap the checkbox to complete the task.
 
 **Day ends in.** A live countdown to the end of your work day, with what's free and the capacity bar. It needs working hours set.
