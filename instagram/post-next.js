@@ -1,4 +1,5 @@
-// ABOUTME: Posts the next unposted day from instagram/day-NN-*/ to Instagram, then records it
+// ABOUTME: Posts today's seasonal post (instagram/on-YYYY-MM-DD-*/) or else the next unposted day
+// ABOUTME: (instagram/day-NN-*/) to Instagram, then records it
 // ABOUTME: in posted.json. Run daily by .github/workflows/instagram.yml.
 //
 // The images are fetched by Instagram from blog.rtnw.app, so a day's folder must be live
@@ -7,6 +8,7 @@
 //
 // Env: IG_USER_ID, IG_ACCESS_TOKEN (Instagram API with Instagram Login).
 //      DRY_RUN=1 prints what would be posted without calling Instagram.
+//      TODAY=YYYY-MM-DD pretends it's that date (for trying seasonal posts with DRY_RUN).
 const fs = require('fs');
 const path = require('path');
 
@@ -18,10 +20,16 @@ const { IG_USER_ID, IG_ACCESS_TOKEN, DRY_RUN } = process.env;
 
 const state = fs.existsSync(STATE) ? JSON.parse(fs.readFileSync(STATE, 'utf8')) : { posted: [] };
 const done = new Set(state.posted.map((p) => p.folder));
-const next = fs.readdirSync(DIR).filter((f) => /^day-\d{2}-/.test(f)).sort().find((f) => !done.has(f));
+const folders = fs.readdirSync(DIR);
+
+// A seasonal post (on-YYYY-MM-DD-id) goes out on its date, ahead of the queue; the queue
+// (day-NN-id) then slips by a day. A seasonal post whose day was missed is never posted late.
+const today = process.env.TODAY || new Date().toISOString().slice(0, 10);
+const pinned = folders.find((f) => f.startsWith(`on-${today}-`) && !done.has(f));
+const next = pinned || folders.filter((f) => /^day-\d{2}-/.test(f)).sort().find((f) => !done.has(f));
 
 if (!next) {
-  console.log('Every day has been posted. Nothing to do.');
+  console.log('Nothing pinned to today and every day has been posted. Nothing to do.');
   process.exit(0);
 }
 

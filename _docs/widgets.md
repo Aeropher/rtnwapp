@@ -19,7 +19,7 @@ After installing an update that adds widgets, open RightNow once before you use 
 
 ## The widgets
 
-**Capacity bar.** A strip with today's capacity bar, how much is free (for example "1h 25m free" or "35m over") and how many tasks are left. The bar fills green to orange, like the one in the app. Make it a little taller to also see what's planned and when your work day ends.
+**Capacity bar.** A strip with today's capacity bar, how much is free (for example "1h 25m free" or "35m over") and how many tasks are left. The bar is the same as the one in the app: a block for each task, with calendar time as one block at the start. If more is planned than fits, the bar squeezes everything in, a dashed line marks your capacity, and the part past it is red. Make it a little taller to also see what's planned and when your work day ends.
 
 **Over by.** What you've planned set against the time left before your work day ends. The big number is how much you have to spare, or how far over you are. Underneath it says what's planned, how long is left, and when the day ends. It needs working hours set; with a fixed capacity it compares against that instead.
 

@@ -7,7 +7,7 @@ RightNow is a time-blocking app with a place to park everything else. You plan e
 ## Core Features
 
 ### 🎯 Capacity-First Planning
-- **Daily Capacity**: Set how much time you actually have today; the capacity bar fills from green to orange as you commit it
+- **Daily Capacity**: Set how much time you actually have today; the capacity bar shows a block per task as you commit it, and anything past your capacity in red
 - **Over-Capacity Warnings**: When the day is full, RightNow tells you — schedule more only if you deliberately override
 - **Estimation Learning**: Compare estimated vs actual time on completed tasks and get better at planning
 
