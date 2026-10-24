@@ -1,6 +1,6 @@
 # Terms of Service for RightNow
 
-**Effective Date**: 20 July 2026
+**Effective Date**: 24 October 2026
 
 ---
 
@@ -86,11 +86,17 @@ The App offers a free tier with core functionality and a premium tier with addit
 
 ### 7.2 Payment Terms
 
-*Premium subscriptions are not yet available. This section will be updated when paid plans launch.* When premium subscriptions become available, billing terms (price, renewal, cancellation) will be made clear at the point of purchase, and any subscription you start will be governed by the terms shown to you at that time.
+Premium is a subscription, priced at £2.99 a month, £14.99 for six months or £27.99 a year (prices in GBP, including any applicable VAT; the App Store and Google Play may show the equivalent in your local currency). The price you pay is shown before you confirm.
+
+On the web, payment is taken by Stripe. In the iPhone, iPad and Android apps, payment is taken by the App Store or Google Play under their terms.
+
+A subscription renews automatically at the end of each period until you cancel it. You can cancel at any time from **Account Settings → Subscription → Manage subscription** (on the web this opens Stripe's billing page), or in your App Store or Google Play subscription settings. Cancelling stops the next renewal; Premium stays active until the end of the period you've paid for.
+
+If we change the price, we will tell you before it applies to you, and the new price takes effect from your next renewal.
 
 ### 7.3 Refunds
 
-Once active, refunds will be handled per the policy disclosed at purchase, the rules of the relevant app store (Apple App Store or Google Play), and any applicable consumer protection law in your jurisdiction.
+Refunds are handled per the policy disclosed at purchase, the rules of the relevant app store (Apple App Store or Google Play), and any applicable consumer protection law in your jurisdiction.
 
 ## 8. Intellectual Property
 
@@ -160,4 +166,4 @@ Questions about these Terms? Contact us at **aeropherhq@gmail.com**.
 
 ---
 
-*Last updated: 20 July 2026*
+*Last updated: 24 October 2026*
