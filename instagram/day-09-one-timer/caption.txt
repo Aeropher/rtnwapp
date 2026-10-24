@@ -1,4 +1,4 @@
-Focus mode: the task you're on, and a timer. Nothing else.
+Focus mode hides everything except the task you're on and a timer.
 
 rtnw.app, or RightNow on the App Store. Link in bio.
 
