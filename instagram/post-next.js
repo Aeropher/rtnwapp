@@ -26,6 +26,12 @@ const folders = fs.readdirSync(DIR);
 // (day-NN-id) then slips by a day. A seasonal post whose day was missed is never posted late.
 const today = process.env.TODAY || new Date().toISOString().slice(0, 10);
 const pinned = folders.find((f) => f.startsWith(`on-${today}-`) && !done.has(f));
+// The daily schedule posts at most one queue post a day, so a day seeded by hand isn't topped up
+const postedToday = state.posted.some((p) => p.at.startsWith(today));
+if (process.env.SCHEDULED && postedToday && !pinned) {
+  console.log(`Already posted today (${today}). Nothing to do.`);
+  process.exit(0);
+}
 const next = pinned || folders.filter((f) => /^day-\d{2}-/.test(f)).sort().find((f) => !done.has(f));
 
 if (!next) {

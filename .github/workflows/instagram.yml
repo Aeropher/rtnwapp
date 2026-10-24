@@ -39,6 +39,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           COUNT: ${{ inputs.count || '1' }}
+          SCHEDULED: ${{ github.event_name == 'schedule' && '1' || '' }}
         run: |
           for i in $(seq 1 "$COUNT"); do
             node instagram/post-next.js
