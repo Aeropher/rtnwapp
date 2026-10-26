@@ -8,7 +8,7 @@ permalink: /privacy-policy.html
   <article class="prose">
     <a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>
     <h1>Privacy Policy for RightNow App</h1>
-    <p class="effective-date">Effective Date: 7 September 2026</p>
+    <p class="effective-date">Effective Date: 26 October 2026</p>
 
     <h2>Introduction</h2>
     <p>This Privacy Policy describes how RightNow ("we", "our", or "the app") collects, uses, and protects your information when you use our capacity-first task management application.</p>
@@ -72,10 +72,15 @@ permalink: /privacy-policy.html
 
     <h3>How we store it</h3>
     <p><strong>We do not store the contents of your calendar.</strong> Event titles, descriptions, locations, times and organisers are fetched from Google when the app needs to display them, held in memory for as long as the screen is open, and then discarded. They are never written to our servers and never written to your device's storage.</p>
-    <p>What we do keep is limited to your own settings and to identifiers that are meaningless without access to your calendar:</p>
+    <p>So that one connection works on every device you sign in on, including the web app, we keep the access Google grants rather than the data it gives access to:</p>
     <ul>
-      <li>Which calendars you chose to show, and their names — stored on your device</li>
-      <li>The identifiers of events you have swiped to mark done — stored on your device</li>
+      <li><strong>A Google refresh token</strong> — the credential Google issues when you connect, which lets RightNow ask Google for short-lived access on your behalf. It is encrypted, stored on our servers in a place no app or device can read, and used only to give your own signed-in devices that short-lived access. Your devices then fetch your events directly from Google; the events themselves still never pass through or rest on our servers.</li>
+      <li>The email address of the Google account you connected, and which of the two scopes above you granted — stored in your RightNow account, so each of your devices can show what is connected</li>
+    </ul>
+    <p>Beyond that, what we keep is limited to your own settings and to identifiers that are meaningless without access to your calendar:</p>
+    <ul>
+      <li>Which calendars you chose to show, and their names — stored in your RightNow account so the choice follows you between devices</li>
+      <li>The identifiers of events you have swiped to mark done — stored in your RightNow account</li>
       <li>Your per-event choice of whether an event counts toward capacity, as an identifier and an on/off value — stored in your RightNow account so the choice follows you between devices</li>
       <li>The web address of any calendar feed you subscribed to — stored in your RightNow account</li>
       <li>For a task you sent to your calendar, the identifier of the event we created for it — stored with that task</li>
@@ -85,7 +90,7 @@ permalink: /privacy-policy.html
     <p>We do not sell, rent or trade Google user data, and we do not share it with third parties. No member of the RightNow team reads your calendar. Data is not transferred to anyone except where you explicitly direct it, or where the law requires it.</p>
 
     <h3>Withdrawing access</h3>
-    <p>You can disconnect your calendar at any time in the app's calendar settings, which removes the stored settings listed above from your device and your account. You can also revoke RightNow's access directly from your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access stops all further reading of your calendar immediately. Events RightNow created in its own calendar remain in your calendar unless you delete them; you own them.</p>
+    <p>You can disconnect your calendar at any time in the app's calendar settings, on any of your devices. That revokes the refresh token with Google, deletes it from our servers, and removes the stored settings listed above from your devices and your account. Deleting your RightNow account does the same. You can also revoke RightNow's access directly from your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access stops all further reading of your calendar immediately, and the stored token stops working. Events RightNow created in its own calendar remain in your calendar unless you delete them; you own them.</p>
 
     <h3>Limited Use</h3>
     <p>RightNow's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
