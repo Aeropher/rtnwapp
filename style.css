@@ -111,6 +111,20 @@ h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 900; letter-spacing: -0
 h1 .grad { background: linear-gradient(120deg, var(--green-l), var(--orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .lede { color: var(--text-dim); font-size: 1.1rem; margin: 20px 0 28px; max-width: 32ch; }
 .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Hero platform buttons: one per place the app runs, all equally findable. */
+.platforms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.platform { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 14px; text-decoration: none; color: var(--text); background: var(--surface); border: 1px solid var(--border); transition: transform .15s, background .2s, box-shadow .2s; }
+.platform:hover { transform: translateY(-2px); background: var(--surface-hi); }
+.platform svg { width: 26px; height: 26px; flex: 0 0 auto; }
+.platform span { display: flex; flex-direction: column; font-weight: 700; font-size: 1.05rem; line-height: 1.2; }
+.platform small { font-weight: 500; font-size: 0.72rem; color: var(--text-dim); }
+.platform-web { color: var(--btn-text); background: var(--green); border-color: var(--green); box-shadow: 0 8px 24px -8px rgba(102, 187, 106, 0.5); }
+.platform-web small { color: inherit; opacity: 0.8; }
+.platform-web:hover { background: var(--green); box-shadow: 0 12px 30px -8px rgba(102, 187, 106, 0.7); }
+.platform-beta { border-color: var(--orange); }
+.platform-beta svg { color: var(--orange); }
+@media (max-width: 640px) { .platforms { grid-template-columns: 1fr; } }
 .trust { margin-top: 22px; font-size: 0.82rem; color: var(--text-faint); }
 
 /* App preview card — mirrors the shipped Today screen: pill capacity bar,
