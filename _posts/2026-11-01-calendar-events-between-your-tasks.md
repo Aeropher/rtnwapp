@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Putting Your Calendar Between Your Tasks"
+date: 2026-11-01 12:00:00 +0000
 description: "Calendar events on Today now sit among your tasks, where the day actually reaches them, and every task gets a rough start and end time."
 ---
 
@@ -37,6 +38,6 @@ Some days you just want the list. There's a **Hide times** option in the ⋮ men
 
 ## When
 
-It's built, and I'm testing it on the web right now. No release date yet.
+It's live on the web at [rtnw.app](https://rtnw.app) now, and in the Android test. The iPhone app is a version behind, and gets it in the next App Store update.
 
 If you've got opinions on it, I'd like to hear them.

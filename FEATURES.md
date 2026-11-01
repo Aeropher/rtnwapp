@@ -26,8 +26,9 @@ RightNow is a time-blocking app with a place to park everything else. You plan e
 
 ### 📅 Today Screen
 - **One Focused List**: Sorted by what matters right now, with drag-to-reorder
+- **Projected Times**: Each task shows a rough start and end time, worked out from now and the durations before it; hide them from the ⋮ menu
 - **Focus Mode**: A full-screen timer for the task you're working on; actual time feeds back into estimation learning
-open- **Google Calendar**: See your calendar events alongside your tasks; connect once and it works on all your devices, web included
+- **Google Calendar**: See your calendar events among your tasks, at the point in the day you'd reach them; connect once and it works on all your devices, web included
 
 ### 📱 Cross-Platform
 - **Web Application**: Full-featured web app at https://rtnw.app
