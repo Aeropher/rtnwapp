@@ -130,6 +130,8 @@ When writing blog posts or content as Alex, maintain these characteristics:
 **What to avoid (AI-isms):**
 - Hype vocabulary: "revolutionary", "cutting-edge", "game-changer", "seamlessly", "blazing-fast", "unleash"
 - Formulaic constructions: "It's not just X, it's Y", "Let's dive in!", "The best part?", staccato marketing triplets
+- Tidy closing clauses: finishing a concrete point by restating it as a balanced pair or metaphor ("so the list said one thing and the day said another", "so they tell the same story"). End on the fact. If deleting the last clause loses no information, delete it.
+- Stock figurative verbs: "survives contact with", "doesn't survive being X", an idea or change "landed", "lands", "resonates". Say what actually happened in plain words ("people understood it", "it broke when").
 - Breathless exclamation marks and grand closes ("Here's to the next chapter! 🚀")
 - Any statistic, quote, or claim that isn't verifiably true
 

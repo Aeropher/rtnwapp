@@ -23,7 +23,7 @@ They weren't. None of them. It turned out the Google Calendar integration had ne
 
 Every one of these produced a real, specific error. And every one of them was being silently swallowed by the app and flattened into the same bland "no calendars found" message. From the outside, four different configuration problems looked like one vague mystery bug.
 
-The reason nobody noticed sooner is simple: the feature was never meant to ship, so nobody ever tried it. Not even me. It existed in the code, it existed in the test suite, it just didn't exist in the world.
+The reason nobody noticed sooner is simple: the feature was never meant to ship, so nobody ever tried it. Not even me.
 
 ## The feature
 
@@ -37,16 +37,16 @@ By the end of the week:
 - Each event has its own capacity control, so you can decide how much of your day a meeting really costs you. Not every hour-long meeting takes an hour out of you, and some take considerably more.
 - And the error handling got rebuilt so that when something fails, the app now tells you what actually failed, instead of pretending nothing happened.
 
-That last one is the bug report becoming a feature. The silent-swallowing that hid four configuration problems for months is gone, replaced with honest error messages. If I'd had those from the start, this whole saga would have been four small fixes instead of one archaeology dig.
+That last one is the bug report becoming a feature. The silent-swallowing that hid four configuration problems for months is gone, replaced with honest error messages. If I'd had those from the start, this whole saga would have been four small fixes.
 
 ## What I'm taking from it
 
 A few things, none of them revolutionary, all of them apparently things I needed to learn by doing:
 
-**A feature you've never exercised end-to-end doesn't exist.** It doesn't matter that the code is there and the unit tests pass. Until someone has done the real thing, on a real device, through the real build, you have a hypothesis, not a feature.
+**A feature you've never exercised end-to-end doesn't exist.** It doesn't matter that the code is there and the unit tests pass. Until someone has done the real thing, on a real device, through the real build, you don't know it works.
 
-**Silently swallowed errors turn configuration problems into mystery bugs.** Every one of those four gaps would have been a five-minute fix if the app had just repeated what Google told it. Catching an error and replacing it with a shrug isn't defensive programming, it's hiding the evidence.
+**Silently swallowed errors turn configuration problems into mystery bugs.** Every one of those four gaps would have been a five-minute fix if the app had just repeated what Google told it.
 
-**One real tester beats thousands of unit tests.** The suite was over 7,500 tests and green the entire time this feature was broken for every user on every platform. I'm not knocking the tests (they catch plenty) but they can only check the things I thought to check. My wife checked the thing I'd never done: actually using it.
+**One real tester beats thousands of unit tests.** The suite was over 7,500 tests and green the entire time this feature was broken for every user on every platform. I'm not knocking the tests (they catch plenty) but they can only check the things I thought to check.
 
 If you're on the Android testing list, the calendar connection now works there too, for the first time. Which is a strange sentence to write about a feature that's been "in the app" for months. Give it a go, and if something fails, the app should now at least have the decency to tell you what.

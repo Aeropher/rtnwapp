@@ -12,7 +12,7 @@ Today we solved it, with the phone plugged into my laptop and a debugger reading
 
 If you own a Samsung phone and an app's notifications don't arrive, the usual culprit is battery management. Samsung, and a few other manufacturers, will "sleep" an app that you haven't opened in a while. A sleeping app can't do the thing RightNow does to remind you, which is ask the phone to wake it at a set time. The reminder is queued, the phone decides the app is dormant, and the reminder nixed.
 
-You can see it happen in the logs. A few minutes after I closed the app, the phone froze it, and my test reminder was marked "deferred". No error. Every permission still showing as granted. The app looked perfectly healthy and was simply not allowed to speak.
+You can see it happen in the logs. A few minutes after I closed the app, the phone froze it, and my test reminder was marked "deferred". No error. Every permission still showing as granted.
 
 The fix for this one is on the phone, not in the app: set RightNow to Unrestricted in battery settings, and add it to the never-sleeping list. RightNow has a help screen that explains exactly this, because it bites a lot of people. Worth knowing about whatever to-do or reminder app you use.
 

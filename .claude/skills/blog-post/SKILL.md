@@ -41,10 +41,17 @@ his project. Full guidance in this repo's `CLAUDE.md`; the working summary:
 - Formulas: "It's not just X, it's Y", "Let's dive in", "The best part?",
   three-word marketing triplets, a grand close with a rocket emoji.
 - Exclamation marks in any quantity.
+- Tidy closing clauses: finishing a concrete point by restating it as a
+  balanced pair or metaphor ("so the list said one thing and the day said
+  another", "so they tell the same story"). End on the fact. If deleting the
+  last clause loses no information, delete it.
+- Stock figurative verbs: "survives contact with", "doesn't survive being
+  X", an idea or change "landed", "lands", "resonates". Say what actually
+  happened in plain words ("people understood it", "it broke when").
 
 Best models to read before writing: `_posts/2026-08-17-what-rightnow-is-and-isnt.md`
-and `_posts/2026-08-11-why-my-phone-never-buzzed.md`. Read one. The rhythm does
-not survive being described.
+and `_posts/2026-08-11-why-my-phone-never-buzzed.md`. Read one before you
+write.
 
 ## Writing the file
 

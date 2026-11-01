@@ -188,7 +188,7 @@ graph TD
 ### ✅ Decisions I'm Happy With
 
 1. **Flutter** - Write once, run everywhere actually works
-2. **Offline-first** - Users love the speed
+2. **Offline-first** - No waiting on the network
 3. **Hive database** - Simple, fast, reliable
 4. **Repository pattern** - Made everything testable
 5. **Riverpod** - Powerful state management
@@ -234,7 +234,7 @@ Don't wait for perfection. My first version had 5 features, not 50.
 I'm my own harshest tester. The best fixes came from being annoyed by my own software daily.
 
 ### 3. Automate Everything
-Time spent on automation pays back 10x.
+Time spent on automation pays for itself.
 
 ### 4. Test the Critical Path
 You don't need 100% coverage, just test what matters.

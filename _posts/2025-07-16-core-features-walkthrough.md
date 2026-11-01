@@ -60,7 +60,7 @@ graph TD
 
 ### What You Discover
 
-The kind of thing this surfaces (speaking from experience): the emails you think take 5 minutes take 20, and writing takes far longer than you'd ever estimate. Uncomfortable, but exactly the feedback that makes next week's plan better.
+The kind of thing this surfaces (speaking from experience): the emails you think take 5 minutes take 20, and writing takes far longer than you'd ever estimate. Uncomfortable, but useful.
 
 ## 🎮 Refinement Games: Making Planning Fun
 
@@ -68,7 +68,7 @@ The most unusual feature in RightNow: backlog upkeep as quick games rather than 
 
 ### This or That
 
-Two tasks, head to head: which would you rather get done? A few rounds of honest snap judgements and your backlog is ranked by what actually matters to you, not what you claimed mattered when you wrote it down.
+Two tasks, head to head: which would you rather get done? A few rounds of honest snap judgements and your backlog is ranked by what actually matters to you.
 
 ### The Duration Game
 
@@ -313,7 +313,7 @@ No promises or dates, just directions I keep coming back to:
 
 ## Making It Work for You
 
-Every feature in RightNow is designed around one principle: **sustainable productivity**. Not doing more, but doing the right things within your actual capacity.
+Every feature in RightNow is designed around one principle: **sustainable productivity**.
 
 It comes together like this:
 1. **Capacity** keeps you realistic

@@ -10,7 +10,7 @@ Nearly every to-do app does exactly this. And I really didn't want to build it.
 
 ## The problem with auto-rollover
 
-Here's what happens in practice with automatic rollover. Monday you plan eight tasks and do six. Tuesday starts with two leftovers plus whatever Tuesday brings. By Friday your "today" list is carrying the whole week's leftovers, and the app has quietly stopped telling you what you chose to do and started reminding you what you didn't.
+Here's what happens in practice with automatic rollover. Monday you plan eight tasks and do six. Tuesday starts with two leftovers plus whatever Tuesday brings. By Friday your "today" list is carrying the whole week's leftovers.
 
 The entire point of RightNow is that Today is a choice. You have a certain amount of capacity, you decide what deserves it, and the app pushes back when you overcommit. An auto-rolling backlog takes that choice away: it spends your capacity for you, on yesterday's decisions, before you've had any say in it.
 
@@ -26,13 +26,13 @@ Three things, none of which touch your capacity without asking.
 
 **A "yesterday" marker.** Tasks that rolled over now carry a small chip in the inbox saying exactly that. It fades as the day goes on, the same way the priority bump does, and both are gone by early evening.
 
-**A morning check-in.** When you open the app after a day with leftovers, Today shows a small banner: "3 tasks from yesterday didn't get done". Tap it and you get the list, and each task offers three choices: add it to today, push it to tomorrow, or leave it in the inbox. Adding it to today goes through the normal capacity check, so if it doesn't fit, the app tells you. You can still overrule it, but it's your call, made with your eyes open. Nothing gets added anywhere unless you choose it. The banner also waits for you all day: even if you don't open the app until the evening, the check-in is still there. And if you'd rather ignore the whole thing, dismiss it and it stays gone until tomorrow.
+**A morning check-in.** When you open the app after a day with leftovers, Today shows a small banner: "3 tasks from yesterday didn't get done". Tap it and you get the list, and each task offers three choices: add it to today, push it to tomorrow, or leave it in the inbox. Adding it to today goes through the normal capacity check, so if it doesn't fit, the app tells you. You can still overrule it, but it's your call. Nothing gets added anywhere unless you choose it. The banner also waits for you all day: even if you don't open the app until the evening, the check-in is still there. And if you'd rather ignore the whole thing, dismiss it and it stays gone until tomorrow.
 
 **Tracking repeat offenders.** The app now counts how many times a task has rolled over. Once something has slipped three times, it stops being "overdue" and starts being a task you're probably not going to do. Rather than letting it keep climbing in priority forever, the Keep or Delete refinement game now deals those chronic tasks first, so the next time you play a round the app nudges you to make a decision: keep it or let it go.
 
 ## The principle
 
-I keep coming back to the same test: does a feature make Today more honest, or less? Automatic rollover makes it less honest. The list stops reflecting what you chose and starts reflecting what you failed to do. A morning triage makes it more honest: same information, but you stay the one deciding.
+I keep coming back to the same test: does a feature make Today more honest, or less? Automatic rollover makes it less honest. A morning triage makes it more honest: same information, but you stay the one deciding.
 
 There is a version of this app that rolls everything forward and marks it all red. It would demo well. I think it would also make people feel worse every single morning, and there are plenty of apps already doing that.
 

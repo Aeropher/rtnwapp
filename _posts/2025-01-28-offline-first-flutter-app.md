@@ -266,4 +266,4 @@ What the offline-first approach buys:
 
 ## Worth It?
 
-Building offline-first is definitely more work upfront, and the sync logic has been the source of my hardest bugs. But the result is an app you can depend on whether you're online, offline, or somewhere in between, and for a task app, that's the whole point.
+Building offline-first is definitely more work upfront, and the sync logic has been the source of my hardest bugs. But the result is an app you can depend on whether you're online, offline, or somewhere in between.

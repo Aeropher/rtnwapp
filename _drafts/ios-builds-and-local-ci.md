@@ -71,7 +71,7 @@ list of the gotchas, in case you're about to do this yourself:
 For me, yes. The mini builds are free, the hardware was already paid for,
 and when something breaks I can read every log on a machine I control. The
 trade-offs: my home internet is now part of my release pipeline, and
-maintenance is mine. Nobody else is patching this runner.
+maintenance is mine.
 
 I didn't type most of those SSH commands myself. Claude Code has come on
 leaps and bounds since I started this project, and honestly I was able to
@@ -83,7 +83,7 @@ need a human with an Apple ID: agreeing to agreements, and plugging in an
 ethernet cable when asked.
 
 I've been pretty hooked on Claude Code since I started using it. In
-programming I think it's an absolute game changer, and it feels less prone
+programming I think it's brilliant, and it feels less prone
 to the ethical dilemmas that come with AI in more creative spaces. The
 environmental costs are something that weigh on me, but I see them as
 systemic issues that should be regulated at governmental level. Remember

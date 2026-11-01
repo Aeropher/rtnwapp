@@ -82,7 +82,6 @@ ElevatedButton.icon(
 )
 ```
 
-Small changes, huge impact.
 
 ## The Unexpected Benefits
 
@@ -120,7 +119,7 @@ RightNow Tasks is inherently niche. It's for a specific type of person, someone 
 
 Let's be honest: that's not most people. My brother uses sticky notes and he's doing just fine. My best friend doesn't even make lists. And that's okay.
 
-When my cousin said "I don't really do the whole productivity thing," it was a good reminder that not every app needs to be for everyone. In fact, trying to please everyone is a great way to build something nobody loves.
+When my cousin said "I don't really do the whole productivity thing," it was a good reminder that not every app needs to be for everyone.
 
 ## The Hidden Cost of "Free"
 
@@ -134,11 +133,11 @@ The irony isn't lost on me: I'm building a productivity app to help people work 
 - **Firebase Hosting**: Great for web, but want to distribute APKs? That'll require an upgrade
 - **Vercel/Netlify**: Generous, until you need those advanced features
 
-So now I'm doing builds locally, manually uploading to Firebase, and wondering if this is sustainable. It's like being a chef who can't afford ingredients: technically possible, but exhausting.
+So now I'm doing builds locally, manually uploading to Firebase, and wondering if this is sustainable.
 
 ## Moving Forward
 
-The web app is still up, still janky, still very much alpha. But it's getting better every day. Each piece of feedback, no matter how much it stings initially, makes RightNow more intuitive, more useful, more real.
+The web app is still up, still janky, still very much alpha. But it's getting better every day. Each piece of feedback, no matter how much it stings initially, makes RightNow more intuitive.
 
 And yes, I still get defensive sometimes. When my mom said "I don't get the point of limiting my tasks," I had to physically restrain myself from launching into a 20-minute explanation of capacity-first planning.
 

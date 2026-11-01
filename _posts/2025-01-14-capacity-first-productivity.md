@@ -48,11 +48,11 @@ bool canAddTask(Task task, double dailyCapacity) {
 }
 ```
 
-The key is making the constraint feel helpful rather than nagging. When the bar fills up, what you're looking at is a realistic day taking shape.
+The key is making the constraint feel helpful rather than nagging.
 
 ## A Side Effect: Better Estimates
 
-One unexpected benefit of capacity-first planning is how it improves your estimation skills. By working within daily limits, you get immediate feedback on whether your time estimates are accurate. Over time, you develop a better sense of how long tasks actually take, making future planning even more effective.
+One unexpected benefit of capacity-first planning is how it improves your estimation skills. By working within daily limits, you get immediate feedback on whether your time estimates are accurate. Over time, you develop a better sense of how long tasks actually take.
 
 ## Is This Approach Right for You?
 

@@ -30,4 +30,4 @@ Honestly, these matter just as much:
 
 I've thought about a proper membership thing (Patreon or similar) and I might do it one day if there's appetite. For now, Ko-fi and kind words cover it.
 
-No VC funding, no growth-at-all-costs mentality. Just sustainable development of a tool that helps people work better, one evening at a time.
+No VC funding, no growth-at-all-costs mentality.

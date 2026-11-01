@@ -41,4 +41,4 @@ None of these block testing. They're the polish between a beta and something I'd
 
 For anyone landing here fresh: RightNow is a to-do app built around one idea: your day has a fixed amount of time in it, and your plan should respect that. You set a daily capacity, tasks fill it up, and when the bar is full, the day is full. There's also a set of quick refinement drills for keeping your backlog honest: re-estimating durations, cutting stale tasks, sharpening vague ones.
 
-If that sounds like your kind of thing, [email me](mailto:aeropherhq@gmail.com) and help me get this over the line. Twelve people, two weeks. That's the whole ask.
+If that sounds like your kind of thing, [email me](mailto:aeropherhq@gmail.com) and help me get this over the line. Twelve people, two weeks.

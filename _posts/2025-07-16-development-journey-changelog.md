@@ -19,7 +19,7 @@ The core thought behind RightNow: what if the app actively stopped you overcommi
 
 **Tasks with durations.** From day one, every task in RightNow carries a time estimate. That's the foundation everything else stands on: you can't budget a day out of tasks that don't cost anything.
 
-**The capacity system.** The heart of the app: you set the hours you actually have, and a bar fills as you commit them. When the day is full, the app says so. Adding the "over capacity" warning was the moment the concept clicked: you *feel* the day being full.
+**The capacity system.** The heart of the app: you set the hours you actually have, and a bar fills as you commit them. When the day is full, the app says so.
 
 **Scheduling and the Today screen.** Moving tasks from the backlog into a day, with the capacity check standing guard. Then making Today a place you actually work from: reordering, marking things done, seeing what's next.
 
@@ -31,7 +31,7 @@ The core thought behind RightNow: what if the app actively stopped you overcommi
 
 **Cloud sync.** Moving from local-only storage to Firebase with offline-first sync. Easily the most complex part of the codebase, and the source of most of my hardest bugs. I also lost an embarrassing amount of time to Android build tooling along the way.
 
-**Accounts.** Sign-in came late on purpose: the app works without an account, and I wanted to keep it that way. An account is for keeping your tasks safe across devices, not a toll booth.
+**Accounts.** Sign-in came late on purpose: the app works without an account, and I wanted to keep it that way. An account is for keeping your tasks safe across devices.
 
 ## Lessons so far
 

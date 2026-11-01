@@ -37,9 +37,9 @@ RightNow takes the arithmetic from time blocking and the inbox from GTD. The bul
 
 That's the whole pitch. The two halves do different jobs:
 
-The **inbox** is where things go when you think of them. No dates, no pressure. It can get as long as it likes, because it isn't a plan, it's a holding pen.
+The **inbox** is where things go when you think of them. No dates, no pressure. It can get as long as it likes.
 
-**Today** is the plan, and it has a size. You set how long your working day is, you pull tasks over from the inbox, and each one takes a bite out of the bar. When the bar is full, the day is full, and the app says so. You can overrule it, but you'll be doing it knowingly rather than by accident at 4pm.
+**Today** is the plan, and it has a size. You set how long your working day is, you pull tasks over from the inbox, and each one takes a bite out of the bar. When the bar is full, the day is full, and the app says so. You can overrule it.
 
 Everything else in the app exists to make that work. The swipe games ask how long tasks take because a capacity bar built on guesses is decoration. The yesterday chip and the morning check-in exist so slipped tasks are visible without taking hours out of today unless you say so. Your calendar events show up on Today alongside the tasks, and you can tick the ones that should count against the bar, because a two hour meeting is two hours whether or not you call it a task.
 
@@ -49,7 +49,7 @@ If a feature doesn't help you decide what fits in a day, it probably shouldn't b
 
 **It isn't a reminder service, and it isn't a deadline tracker.** This is the one I'd most like people to take away, and it's in the name. RightNow is about what you can do *now*, today, with the hours you have left. It is not about what needs doing on the 14th at half two. If something has to happen at a specific time, that's what a calendar is for, and your calendar is better at it than I will ever be. RightNow can even push the task into your calendar for you. Tasks here do have due dates and can nudge you, because sometimes that's useful, but if you're reaching for this app to remember your dentist appointment, it's the wrong tool.
 
-**It won't roll your unfinished tasks into tomorrow for you.** Most apps do. It means your Today list slowly stops being what you chose and starts being what you failed to do. Unfinished tasks go back to the inbox and get flagged in the morning, and you decide.
+**It won't roll your unfinished tasks into tomorrow for you.** Most apps do. Unfinished tasks go back to the inbox and get flagged in the morning, and you decide.
 
 **It won't nag you.** Three daily nudges and whatever reminders you set on your own tasks. No streak-guilt notifications, no "we miss you", no marketing pushes. The permission prompt tells you exactly what will be sent, and that's all that will ever be sent.
 

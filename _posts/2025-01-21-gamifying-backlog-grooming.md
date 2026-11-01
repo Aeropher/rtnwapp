@@ -32,7 +32,7 @@ void updatePriorities(Task winner, Task loser) {
 }
 ```
 
-After 20-30 comparisons, your entire backlog is sorted by what actually matters to you, not what you thought mattered when you created the task.
+After 20-30 comparisons, your entire backlog is sorted by what actually matters to you.
 
 ### 2. The Duration Game: "Beat the Clock"
 
