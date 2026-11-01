@@ -38,6 +38,6 @@ Some days you just want the list. There's a **Hide times** option in the ⋮ men
 
 ## When
 
-It's live on the web at [rtnw.app](https://rtnw.app) now, and in the Android test. The iPhone app is a version behind, and gets it in the next App Store update.
+It's live on the web at [rtnw.app](https://rtnw.app) now, and in the [Android test]({{ '/test.html' | relative_url }}) (which still needs a few more people before it can go on the Play Store properly). The iPhone app is a version behind, and gets it in the next App Store update.
 
 If you've got opinions on it, I'd like to hear them.
