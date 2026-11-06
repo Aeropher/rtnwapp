@@ -2,7 +2,7 @@
 title: "Repeating tasks"
 summary: "Make a task repeat, what happens when you finish or miss one, skipping one occurrence, and stopping or deleting a series."
 order: 2
-last_reviewed: 2026-10-21
+last_reviewed: 2026-11-03
 ---
 
 A repeating task is one task that moves itself on each time. It doesn't make a pile of copies.
@@ -35,7 +35,9 @@ If one or more occurrences go by while you're away, the task comes back to Today
 
 ## Skip one, or delete the whole series
 
-Swipe left and tap **Delete**, or tap **Delete** in the editor. You'll be asked:
+On Today, the quickest way to skip is to swipe left and tap **Skip**. The task moves straight to its next date, with no question asked. The snackbar tells you the next date, and **UNDO** puts it back.
+
+Anywhere else, swipe left and tap **Delete**, or tap **Delete** in the editor. You'll be asked:
 
 > **Delete repeating task?**
 > Skip this one moves it to its next date. Nothing is marked done.

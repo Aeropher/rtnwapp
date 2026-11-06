@@ -2,7 +2,7 @@
 title: "Tasks"
 summary: "Add, edit, complete, move and delete tasks, including the shortcuts quick-add understands."
 order: 1
-last_reviewed: 2026-10-21
+last_reviewed: 2026-11-03
 ---
 
 ## Add a task
@@ -58,6 +58,7 @@ Swipe right and tap **Complete**. To undo, tap **Undo** on the snackbar, or swip
 ## Move a task between Today and the Inbox
 
 - **On Today:** swipe left and tap **All Tasks** to send it back to the Inbox.
+- **On Today, not today after all:** swipe left and tap **Tomorrow**. It moves to tomorrow's Today list. (A repeating task shows **Skip** here instead, see [Repeating tasks]({{ '/docs/repeating-tasks/' | relative_url }}).)
 - **In the Inbox:** swipe left and tap **Today** to plan it for today. If it doesn't fit in your capacity, the app tells you.
 
 Either way, the snackbar has an **Undo**.
