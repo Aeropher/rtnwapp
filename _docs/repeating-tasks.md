@@ -2,7 +2,7 @@
 title: "Repeating tasks"
 summary: "Make a task repeat, what happens when you finish or miss one, skipping one occurrence, and stopping or deleting a series."
 order: 2
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-09
 ---
 
 A repeating task is one task that moves itself on each time. It doesn't make a pile of copies.
@@ -20,7 +20,7 @@ Tap **Repeat** in the add bar's options, or the repeat line in the editor. Choos
 
 For **Weekly**, pick the days under **Repeat on**, or tap **Mon-Fri** for weekdays. Tap **Done**.
 
-The editor then shows something like "Repeats weekly on Mon, Wed".
+The editor then shows something like "Repeats weekly on Mon, Wed". In your task lists, including Today, a repeating task shows 🔄.
 
 ## What happens when you complete it
 
@@ -32,6 +32,8 @@ The task is logged as done and comes back as a fresh copy for its next occurrenc
 ## If you miss some
 
 If one or more occurrences go by while you're away, the task comes back to Today **once**, dated to the most recent occurrence you missed. Missed days don't stack up as several copies.
+
+When you then finish or skip it, the next date is always one that's still to come, so it doesn't land straight back on Today.
 
 ## Skip one, or delete the whole series
 
