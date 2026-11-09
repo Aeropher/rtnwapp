@@ -2,7 +2,7 @@
 title: "Tasks"
 summary: "Add, edit, complete, move and delete tasks, including the shortcuts quick-add understands."
 order: 1
-last_reviewed: 2026-11-03
+last_reviewed: 2026-11-09
 ---
 
 ## Add a task
@@ -54,6 +54,15 @@ Changes save when you leave the title or description field, and when you tap **S
 ## Complete a task
 
 Swipe right and tap **Complete**. To undo, tap **Undo** on the snackbar, or swipe right on the completed task and tap **Undo**.
+
+### In focus mode
+
+On Today, tap a task to expand it, then tap **Focus**. When you've finished, tap the tick at the top of the screen. RightNow shows the next task on Today, in the same order as your list:
+
+- Tap the task, or **Start**, to go straight into focus mode on it.
+- Tap **Take a break** to go back to Today.
+
+If there's nothing left on Today, you'll see **Back to Today** instead.
 
 ## Move a task between Today and the Inbox
 
