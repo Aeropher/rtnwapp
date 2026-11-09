@@ -50,5 +50,9 @@
       </div>
     </div>
   </footer>
+  {% if jekyll.environment == 'production' %}
+  <!-- Cloudflare Web Analytics: cookieless page counts for this site only -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "de488ee6de3346c19135a422c0cc43a0"}'></script>
+  {% endif %}
 </body>
 </html>
