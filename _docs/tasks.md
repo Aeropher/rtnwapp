@@ -2,7 +2,7 @@
 title: "Tasks"
 summary: "Add, edit, complete, move and delete tasks, including the shortcuts quick-add understands."
 order: 1
-last_reviewed: 2026-11-09
+last_reviewed: 2026-11-10
 ---
 
 ## Add a task
@@ -45,7 +45,7 @@ A `#tag` only adds a tag you already have. It won't create a new one. See [Tags]
 - **Inbox:** tap the task.
 - **Today:** tap the task to expand it, then tap **Edit**.
 
-The editor has the title, description, duration, priority (Other, Low, Medium, High, Now), tags, when it's planned for, repeat, **Keep in Today until done**, notifications (once it has a due time), subtasks and linked tasks.
+The editor has the title, description, duration, priority (Someday, Low, Medium, High, Now), tags, when it's planned for, repeat, **Keep in Today until done**, notifications (once it has a due time), subtasks and linked tasks.
 
 Changes save when you leave the title or description field, and when you tap **Save** or close the editor. The title can't be empty.
 
@@ -53,7 +53,7 @@ Changes save when you leave the title or description field, and when you tap **S
 
 ## Complete a task
 
-Swipe right and tap **Complete**. To undo, tap **Undo** on the snackbar, or swipe right on the completed task and tap **Undo**.
+Swipe right and tap **Complete**. To undo, tap **UNDO** on the snackbar, or swipe right on the completed task and tap **Undo**.
 
 ### In focus mode
 
@@ -70,7 +70,7 @@ If there's nothing left on Today, you'll see **Back to Today** instead.
 - **On Today, not today after all:** swipe left and tap **Tomorrow**. It moves to tomorrow's Today list. (A repeating task shows **Skip** here instead, see [Repeating tasks]({{ '/docs/repeating-tasks/' | relative_url }}).)
 - **In the Inbox:** swipe left and tap **Today** to plan it for today. If it doesn't fit in your capacity, the app tells you.
 
-Either way, the snackbar has an **Undo**.
+Either way, the snackbar has an **UNDO**.
 
 ## Delete a task
 
