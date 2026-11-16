@@ -8,7 +8,7 @@ permalink: /privacy-policy.html
   <article class="prose">
     <a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>
     <h1>Privacy Policy for RightNow App</h1>
-    <p class="effective-date">Effective Date: 9 November 2026</p>
+    <p class="effective-date">Effective Date: 16 November 2026</p>
 
     <h2>Introduction</h2>
     <p>This Privacy Policy describes how RightNow ("we", "our", or "the app") collects, uses, and protects your information when you use our capacity-first task management application.</p>
@@ -23,7 +23,8 @@ permalink: /privacy-policy.html
     </ul>
     <h3>Automatically Collected Information</h3>
     <ul>
-      <li><strong>Usage Analytics</strong>: How you interact with app features (stored locally)</li>
+      <li><strong>Usage Analytics</strong>: Counts of how app features are used (for example, that a task was created and how long it was planned for), sent to Google Analytics for Firebase. Never the text of your tasks</li>
+      <li><strong>Crash Reports</strong>: Technical details when the app crashes, sent to Firebase Crashlytics</li>
       <li><strong>Device Information</strong>: Device type and operating system version for compatibility</li>
     </ul>
 
@@ -31,26 +32,22 @@ permalink: /privacy-policy.html
     <p>We use the information we collect to:</p>
     <ul>
       <li>Provide core task management and time tracking functionality</li>
-      <li>Sync your data across devices (only when you sign in)</li>
+      <li>Sync your data across your devices when you sign in</li>
       <li>Analyze app usage to improve features and performance</li>
       <li>Send important service updates (only with your permission)</li>
     </ul>
 
     <h2>Data Storage and Security</h2>
-    <h3>Local Storage</h3>
-    <p>By default, all your data is stored locally on your device using secure local database technology. This means:</p>
+    <h3>Where your data is stored</h3>
+    <p>Your tasks, settings and time records are stored in Google Firebase (Cloud Firestore), so they can sync and aren't lost with your phone. This is the case whether or not you create an account. Without one, the app uses an anonymous account tied to your device. A copy is also kept on your device so the app works offline.</p>
     <ul>
-      <li>Your data remains on your device</li>
-      <li>You have full control over your information</li>
-      <li>No internet connection is required to use the app</li>
-    </ul>
-    <h3>Cloud Storage (Optional)</h3>
-    <p>If you choose to create an account:</p>
-    <ul>
-      <li>Your data is securely synced to Firebase Firestore</li>
-      <li>All data is encrypted during transmission</li>
+      <li>Your data is encrypted in transit and at rest on Google's servers</li>
+      <li>Security rules mean each account can only read and write its own data</li>
+      <li>It is not end-to-end encrypted</li>
       <li>You can delete your cloud data at any time</li>
     </ul>
+    <h3>Who can see your data</h3>
+    <p>Because your data isn't end-to-end encrypted, RightNow's administrator can technically access it. RightNow is run by one person, and nobody else has access. We don't look at your tasks. The only exceptions are when you ask us to help with a problem and say we can look, or when the law requires it. Access to stored data through the admin console and tools is recorded in Google Cloud's audit logs.</p>
 
     <h2 id="google-calendar-and-google-user-data">Google Calendar and Google User Data</h2>
     <p>Connecting a Google Calendar is entirely optional. RightNow works fully without it, and nothing below applies unless you choose to connect one.</p>
@@ -116,7 +113,6 @@ permalink: /privacy-policy.html
       <li><strong>Correct Your Data</strong>: Update any inaccurate information</li>
       <li><strong>Delete Your Data</strong>: Remove your account and all associated data (<a href="{{ '/delete-account.html' | relative_url }}">see deletion guide</a>)</li>
       <li><strong>Export Your Data</strong>: Download your information in a portable format</li>
-      <li><strong>Use Offline Mode</strong>: Use the app without any data collection</li>
     </ul>
 
     <h2>Data Retention</h2>

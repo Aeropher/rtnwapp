@@ -28,7 +28,7 @@ We may add, modify, or remove features at any time at our discretion.
 
 ### 3.1 Anonymous Use
 
-You may use the App without creating an account. In that mode, your data is stored locally on your device and is not synced across devices.
+You may use the App without creating an account. In that mode, your data is stored under an anonymous account tied to that device, and is not synced to your other devices.
 
 ### 3.2 Account Creation
 
@@ -166,4 +166,4 @@ Questions about these Terms? Contact us at **aeropherhq@gmail.com**.
 
 ---
 
-*Last updated: 24 October 2026*
+*Last updated: 16 November 2026*
